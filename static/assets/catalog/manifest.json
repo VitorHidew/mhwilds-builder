@@ -1,0 +1,1218 @@
+{
+  "monster:Zoh Shia": {
+    "path": "/assets/catalog/5f7e404fdc2cecdc824b6827.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Zoh%20Shia.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "946d724b1c4cca890766d83368595278a790df64dc617677c82c8893ed898cda",
+    "bytes": 115674,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Guardian Doshaguma": {
+    "path": "/assets/catalog/252559d8f16349eb38da5afd.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Guardian%20Doshaguma.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "63410bb78148d5f273f0c8b5d4cefeb26bfc6d71725392f5bd5e1fb211ef3997",
+    "bytes": 106470,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Rey Dau": {
+    "path": "/assets/catalog/946348cacec2696b99744a43.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Rey%20Dau.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "64816f75bae76656ad265936fe7115713df060ce15f8e0aec2f9f36e5237bc88",
+    "bytes": 132538,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Lala Barina": {
+    "path": "/assets/catalog/e7fd6f17fe9ce22ae6384906.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Lala%20Barina.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "6c55c6101dec3b3887657875440d41f22ff8db9d7b4c91176a7aab0a5898d3ad",
+    "bytes": 111708,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Congalala": {
+    "path": "/assets/catalog/bbdc6c0e8b414847dc0a408d.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Congalala.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Congalala",
+    "sha256": "5928b148c20d7e19e36de41db6ac2c30f0f04b9f43cdd7b28573b748a479ca6e",
+    "bytes": 1185922,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Nerscylla": {
+    "path": "/assets/catalog/bc53e1f888abc586debcf874.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Nerscylla.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Nerscylla",
+    "sha256": "0a2fc4010147d26ca4e2f184da12533f95cb39f71ef01008cc571b6cf81cf7cb",
+    "bytes": 671508,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Gore Magala": {
+    "path": "/assets/catalog/25b91f6e25c5a1b6999c191d.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Gore%20Magala.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "5bf23d09fb2aa7dc7190153671634d7a6d66f0d2ef2a0a177266ba79f679469c",
+    "bytes": 136230,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Gravios": {
+    "path": "/assets/catalog/f8dfc88f597fa52e2bb4aaa8.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Gravios.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Gravios",
+    "sha256": "7ec248746d4c1bb67db618bd2616237eb26605da0a649716d797e9b3bf9b2c27",
+    "bytes": 350666,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Guardian Arkveld": {
+    "path": "/assets/catalog/7fd60f5e20ac7932c6bc24dd.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Guardian%20Arkveld.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "ac7c610bc9e3ee07505901e851c8e59d5079da298dd0d69bf95f24474201e315",
+    "bytes": 129268,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Quematrice": {
+    "path": "/assets/catalog/ad8ac352df10c066468ee3a5.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Quematrice.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Quematrice",
+    "sha256": "e2d317acd3fb2a179d7637fa306d80a680c955c26c11a6821d93b8ec138111bd",
+    "bytes": 857576,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Doshaguma": {
+    "path": "/assets/catalog/f09258d3609c01539bed9805.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Doshaguma.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Doshaguma",
+    "sha256": "9078e2977a3de25b36245a7211c57a65e7bf95b4fc64f2f626f277181e3e4cd7",
+    "bytes": 152486,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Balahara": {
+    "path": "/assets/catalog/5c67d14de2beefbde96e6be3.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Balahara.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Balahara",
+    "sha256": "0c72ae48e7141914f9a9bb8d4cac09d616f34238a9ba1edca3d216275145690c",
+    "bytes": 300426,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Rathian": {
+    "path": "/assets/catalog/5422e9cfb54b8a65c03ed713.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Rathian.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Rathian",
+    "sha256": "233a5efc19352bc95f26f885519e5bb021914d2f3ba432f62a6ddd7815e7c0b9",
+    "bytes": 510762,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Chatacabra": {
+    "path": "/assets/catalog/c7a3ab62e946a53ac604370f.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Chatacabra.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Chatacabra",
+    "sha256": "cbde7330504a9d48247ee14dc227abda897bc665ddea71205c5e8a2e7f9bb4af",
+    "bytes": 168700,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Mizutsune": {
+    "path": "/assets/catalog/52b5d9ef963a3f216e7abd13.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Mizutsune.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Mizutsune",
+    "sha256": "44e6cfd94d0476342d9e3a748ab17a9b8577a6469ebdf1bea6c2aec7c108be76",
+    "bytes": 541810,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Guardian Fulgur Anjanath": {
+    "path": "/assets/catalog/b846ada29cfb83a663472089.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Guardian%20Fulgur%20Anjanath.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "fa3b8783c61e7a213d7554a7a495453eb9ad5264e2877c8070b2aff9742ec4ed",
+    "bytes": 119128,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Hirabami": {
+    "path": "/assets/catalog/7627d5af66b922182638e500.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Hirabami.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Hirabami",
+    "sha256": "b38b4e8caa6e93e2db49047bd9863db97084d8c4ea06b9d273e52b698cb7fc46",
+    "bytes": 341292,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Yian Kut-Ku": {
+    "path": "/assets/catalog/c1ddf447d0b60b52b6e3c180.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Yian%20Kut-Ku.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "8d379570cc1f45187cad00cb1c654d6307784351b11a061ae8454bc29c3faf82",
+    "bytes": 125456,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Rompopolo": {
+    "path": "/assets/catalog/93558e5c70ab0900a4bcd09a.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Rompopolo.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Rompopolo",
+    "sha256": "9467eeed0fcf18e559426bc818d3de4716355448ab26a1b5814d5797971f61d3",
+    "bytes": 372228,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Arkveld": {
+    "path": "/assets/catalog/432c62bb459d05edb7835139.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Arkveld.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Arkveld",
+    "sha256": "80cd78d55b79d23e39d51c713d2ce0b853eb22fefbaaeb8e0c0fe050ae78e41e",
+    "bytes": 642162,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Ajarakan": {
+    "path": "/assets/catalog/162dad43079e7ce90e95e29f.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Ajarakan.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Ajarakan",
+    "sha256": "02258b821b44ef850b0080c3a8401165b4ea2dbc5c1a3ee49da90a2aeb4167d1",
+    "bytes": 653950,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Gypceros": {
+    "path": "/assets/catalog/226eed2907f4785c1f695990.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Gypceros.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Gypceros",
+    "sha256": "a69db68fd24b054188482d09529ac8e3077ee6f1cc8aed2e45a8cc18615e32b5",
+    "bytes": 489102,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Xu Wu": {
+    "path": "/assets/catalog/1300e94acf106a005d632547.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Xu%20Wu.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "250923040a22ccbe9bd0f06b84a448a6feff15bea665317daf37e7e4091ee59b",
+    "bytes": 119102,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Guardian Rathalos": {
+    "path": "/assets/catalog/efa34c676ad124ffb7ef10fc.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Guardian%20Rathalos.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "a8f4916fb0fe947870d436803558d0c0c4c6f630837ef4c635bc139cf935ff14",
+    "bytes": 122330,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Uth Duna": {
+    "path": "/assets/catalog/a497ac5758b2d5c4c82ba070.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Uth%20Duna.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "625eacdb1c571f9d6e00eba8dc50787395cc6f3d3a8b29898bf41e8b2a6ef0f7",
+    "bytes": 131086,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Jin Dahaad": {
+    "path": "/assets/catalog/dbded32d8f419f322a991e18.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Jin%20Dahaad.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "6c92934f583be25f525e5fb55ae87a2e438528c4516a7091a6106aca5c2e1773",
+    "bytes": 156974,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Nu Udra": {
+    "path": "/assets/catalog/4bc2fd71d41f7586a6ceb314.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Nu%20Udra.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "f94e0b2a6032289a55dcf8b560baa0c279acaa853545b5f0827034403851c909",
+    "bytes": 124802,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Guardian Ebony Odogaron": {
+    "path": "/assets/catalog/d6ecf757038e7da22f6ac8c4.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Guardian%20Ebony%20Odogaron.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "501b700e0abc10a8a2cb9f3f2c269cc675b20d9016327e13eb2027a8de44518e",
+    "bytes": 128846,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Rathalos": {
+    "path": "/assets/catalog/665223e62fe54e38903f6aaa.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Rathalos.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Rathalos",
+    "sha256": "399105295dc94c19f4744dc6251b61c3b8f725ac5fd5c62e41add9707d36010f",
+    "bytes": 70284,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Blangonga": {
+    "path": "/assets/catalog/7943d082be2d0c23cd921998.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Blangonga.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Blangonga",
+    "sha256": "a4fb28a8fcf209e0911ea2599edf00298b1d1b05663c9257eda549dc951a4503",
+    "bytes": 780400,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Lagiacrus": {
+    "path": "/assets/catalog/b61e2565d066ed848b00ed46.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Lagiacrus.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Lagiacrus",
+    "sha256": "6c397483de28a85edff7d4d44126dc8e801f8fad3504914ba56a85a102c0d00d",
+    "bytes": 341832,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Seregios": {
+    "path": "/assets/catalog/93af396ee452bf88de701bb9.webp",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Monsters/Large%20Renders/Seregios.webp",
+    "page": "https://www.phantombrawlers.com/MHWilds/Monsters/Seregios",
+    "sha256": "3680ef35108dcbe662988434613e0e2e87120cc87c3bf2d22c446fe4f31f6a37",
+    "bytes": 191636,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Omega Planetes": {
+    "path": "/assets/catalog/67bb38a727e0c5abf2919665.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Omega%20Planetes.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "289a82f24ddf491dfa61fe22dda53c1c28c1f131c4e25da5700ed8f8d6d87368",
+    "bytes": 117466,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "weapon:ostrak oblivion": {
+    "path": "/assets/catalog/6ab6cb8b5bcc51475cf493d8.png",
+    "source": "https://static0.fextralifeimages.com/file/monsterhunterwilds/8/8b/Ostrak_oblivion-gogma-artian-weapon-mhwilds-wiki-guide.png",
+    "page": "https://monsterhunterwilds.wiki.fextralife.com/Gogma_Artian_Weapons",
+    "sha256": "38d003e322563d2e6bcf32d2aa7f2af5be72852dc7103744ae8204684041a955",
+    "bytes": 10371,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "weapon:eternal cusp": {
+    "path": "/assets/catalog/99fecb1011dae6c446cbb819.png",
+    "source": "https://static0.fextralifeimages.com/file/monsterhunterwilds/7/7f/Eternal_cusp-gogma-artian-weapon-mhwilds-wiki-guide.png",
+    "page": "https://monsterhunterwilds.wiki.fextralife.com/Gogma_Artian_Weapons",
+    "sha256": "18bc4ea28f49e4b4b0d5c079dcfde358d8d2c75898f669acd01c7de5ae153a26",
+    "bytes": 13752,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "weapon:promised abyss": {
+    "path": "/assets/catalog/61fae37623a2992d065df42c.png",
+    "source": "https://static0.fextralifeimages.com/file/monsterhunterwilds/f/f5/Promised-abyss-gogma-artian-weapon-mhwilds-wiki-guide.png",
+    "page": "https://monsterhunterwilds.wiki.fextralife.com/Gogma_Artian_Weapons",
+    "sha256": "d2ab83f2fd90c14666e6f259e4eafaf161599491f97797a52e65a1dbe3a6dc94",
+    "bytes": 12784,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "weapon:wicked regnum": {
+    "path": "/assets/catalog/0d735ced27aa33d10f5fac3b.png",
+    "source": "https://static0.fextralifeimages.com/file/monsterhunterwilds/a/aa/Wicked_regnum-gogma-artian-weapon-mhwilds-wiki-guide.png",
+    "page": "https://monsterhunterwilds.wiki.fextralife.com/Gogma_Artian_Weapons",
+    "sha256": "21458f76a4679d593c944f80b8e110e5bc601e248e7f74cbc3411bb9caabe5be",
+    "bytes": 10657,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "weapon:headsman's hamus": {
+    "path": "/assets/catalog/7c3442af7896db01868708ca.png",
+    "source": "https://static0.fextralifeimages.com/file/monsterhunterwilds/6/69/Headsmans_hamus-gogma-artian-weapon-mhwilds-wiki-guide.png",
+    "page": "https://monsterhunterwilds.wiki.fextralife.com/Gogma_Artian_Weapons",
+    "sha256": "b4cf4ae2c500374471750fb918fb6ab0b574dba093d143e338fab7f7bf47f96e",
+    "bytes": 6894,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "weapon:auguring omen": {
+    "path": "/assets/catalog/37b1f2143887581a2c2224c3.png",
+    "source": "https://static0.fextralifeimages.com/file/monsterhunterwilds/f/fb/Auguring_omen-gogma-artian-weapon-mhwilds-wiki-guide.png",
+    "page": "https://monsterhunterwilds.wiki.fextralife.com/Gogma_Artian_Weapons",
+    "sha256": "5ee3e761156247adf1cd47988f5ceadc449114c3711093eb8e87ff38d196172d",
+    "bytes": 13268,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "weapon:limbo llor": {
+    "path": "/assets/catalog/44ae62eec5db29c4c29ecf47.png",
+    "source": "https://static0.fextralifeimages.com/file/monsterhunterwilds/7/70/Limbo_llor-gogma-artian-weapon-mhwilds-wiki-guide.png",
+    "page": "https://monsterhunterwilds.wiki.fextralife.com/Gogma_Artian_Weapons",
+    "sha256": "3d835151c178d299a7563c5a5a3f790db05a353a4f06b1ab8b87a1e006fc3e3a",
+    "bytes": 5082,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "weapon:calamitous angel": {
+    "path": "/assets/catalog/c34f8dc204e08f2cdc9442e9.png",
+    "source": "https://static0.fextralifeimages.com/file/monsterhunterwilds/8/8d/Calamitous_angel-gogma-artian-weapon-mhwilds-wiki-guide.png",
+    "page": "https://monsterhunterwilds.wiki.fextralife.com/Gogma_Artian_Weapons",
+    "sha256": "b5e585f2a427972f82825c0a4badf267de2a5fa970fc532e7269cca25a52b7ff",
+    "bytes": 9147,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "weapon:trembling hels": {
+    "path": "/assets/catalog/3d618ebe83a472beef5f7ef1.png",
+    "source": "https://static0.fextralifeimages.com/file/monsterhunterwilds/a/aa/Trembling_hels-gogma-artian-weapon-mhwilds-wiki-guide.png",
+    "page": "https://monsterhunterwilds.wiki.fextralife.com/Gogma_Artian_Weapons",
+    "sha256": "92337133eae2bdbc39f30bb2798a97e35038ec4db37ec38ec4ab7533af0ec37e",
+    "bytes": 11358,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "weapon:bound admonition": {
+    "path": "/assets/catalog/4dd9e6ee8db582f6683d8787.png",
+    "source": "https://static0.fextralifeimages.com/file/monsterhunterwilds/f/fa/Bound_admonition-gogma-artian-weapon-mhwilds-wiki-guide.png",
+    "page": "https://monsterhunterwilds.wiki.fextralife.com/Gogma_Artian_Weapons",
+    "sha256": "f8518286a88b3fe0154f379ab6e9dfc99ac3fd6ab5949fec609403bbe4921295",
+    "bytes": 11130,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "weapon:bethorned agony": {
+    "path": "/assets/catalog/7772c2d3e1b65917dab0c18f.png",
+    "source": "https://static0.fextralifeimages.com/file/monsterhunterwilds/2/22/Bethorned_agony-gogma-artian-weapon-mhwilds-wiki-guide.png",
+    "page": "https://monsterhunterwilds.wiki.fextralife.com/Gogma_Artian_Weapons",
+    "sha256": "9307c8c4131d53d8c25cfef89015fcde0a455e750eb45abbb220615e77bb4177",
+    "bytes": 11040,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "weapon:onyx choros": {
+    "path": "/assets/catalog/e79e87830f8f02c30df85a79.png",
+    "source": "https://static0.fextralifeimages.com/file/monsterhunterwilds/0/0d/Onyx_choros-gogma-artian-weapon-mhwilds-wiki-guide.png",
+    "page": "https://monsterhunterwilds.wiki.fextralife.com/Gogma_Artian_Weapons",
+    "sha256": "9e31f41c1a45c72b610dc7dd98a38a166fa41a65558a8009363555c1343c5bd7",
+    "bytes": 12814,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "weapon:kyrie verd": {
+    "path": "/assets/catalog/2948d7edc630d0a150dd406d.png",
+    "source": "https://static0.fextralifeimages.com/file/monsterhunterwilds/d/d0/Kyrie_verd-gogma-artian-weapon-mhwilds-wiki-guide.png",
+    "page": "https://monsterhunterwilds.wiki.fextralife.com/Gogma_Artian_Weapons",
+    "sha256": "8af2058647f5e48bd06b2a45c4f7090cb51e5a50051c26a57c2db9a56256341e",
+    "bytes": 13588,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "weapon:aether pike": {
+    "path": "/assets/catalog/0045838a7d607526229a20d8.png",
+    "source": "https://static0.fextralifeimages.com/file/monsterhunterwilds/3/3b/Ather_pike-artian-weapon-mhwilds-wiki-guide.png",
+    "page": "https://monsterhunterwilds.wiki.fextralife.com/Gogma_Artian_Weapons",
+    "sha256": "9803f3912cb77f0e8b4305ace67f36842d587b18b60fd961994481640a7d7ffe",
+    "bytes": 7221,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Conga Mail α": {
+    "path": "/assets/catalog/d8a0fac0093167226e189986.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_071_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Conga%20%CE%B1/Conga%20Mail%20%CE%B1",
+    "sha256": "e6faebb54f1341ac6de91b406d259157c6f87b0e3afd2059527a444df250253e",
+    "bytes": 53028,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Gore Mail α": {
+    "path": "/assets/catalog/0fa9c308f0ec943ef8e42f21.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_107_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Gore%20%CE%B1/Gore%20Mail%20%CE%B1",
+    "sha256": "3adf2c8795e55281c1dfb3b34375c993eefb864af54279b61bc79aa69b3bc180",
+    "bytes": 56058,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Gore Vambraces α": {
+    "path": "/assets/catalog/8359a1e0d6eb08f14f44c7a0.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_107_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Gore%20%CE%B1/Gore%20Vambraces%20%CE%B1",
+    "sha256": "056fe55c9e466b1cf84283153e31794468512d128c4d1e7ec11b2a4db935bf1d",
+    "bytes": 50422,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Gore Coil α": {
+    "path": "/assets/catalog/a1b074036d0c074c37f7abe3.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_107_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Gore%20%CE%B1/Gore%20Coil%20%CE%B1",
+    "sha256": "5342bbc0f88608d6c84c2472d503fb75e0c06a4415cd5a936836e9351561fe52",
+    "bytes": 48695,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Blango Mail β": {
+    "path": "/assets/catalog/c89c81a8cf6ed6029dc5b47b.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_092_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Blango%20%CE%B2/Blango%20Mail%20%CE%B2",
+    "sha256": "5b008f313cc9236c8f04174a5ac3bf74110b07a900cb2076828459f60cf16ca3",
+    "bytes": 51427,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Blango Coil β": {
+    "path": "/assets/catalog/b2f0053bf21741b348e8dfde.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_092_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Blango%20%CE%B2/Blango%20Coil%20%CE%B2",
+    "sha256": "9497d72025f5f544949a27ec2f4669ac2d0d83c9d55931e6510259f7aa5553bd",
+    "bytes": 53398,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Alloy Helm α": {
+    "path": "/assets/catalog/6c59be053f81c0397737197e.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_063_0_0_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Alloy%20%CE%B1/Alloy%20Helm%20%CE%B1",
+    "sha256": "60e2fc6731675e96337edb2080fb5f696c718bdf50b9f76b582aa8967c300eee",
+    "bytes": 48218,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Alloy Coil α": {
+    "path": "/assets/catalog/5b648c85969dd60a619d2c64.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_063_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Alloy%20%CE%B1/Alloy%20Coil%20%CE%B1",
+    "sha256": "e9523c5f8c01badcd1ee2a60b795697c8b7791e592423ea357f72061cab2aced",
+    "bytes": 48680,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Alloy Greaves α": {
+    "path": "/assets/catalog/f99d42e3a63aab2914b2cada.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_063_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Alloy%20%CE%B1/Alloy%20Greaves%20%CE%B1",
+    "sha256": "79a50f5c4e329bce3fe17d8a1705d2ac703dede8b71e2c7ec4f68951ccc74e92",
+    "bytes": 47201,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Rathalos Vambraces β": {
+    "path": "/assets/catalog/eb99e3a9ee78a04bc39cf683.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_104_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Rathalos%20%CE%B2/Rathalos%20Vambraces%20%CE%B2",
+    "sha256": "efe14f5b392c62ce64927e2ab3ea791593c2f66a7d59ca28f3448941e1cf9205",
+    "bytes": 52997,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Rathalos Coil β": {
+    "path": "/assets/catalog/b4a77f114d92a86d062905ae.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_104_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Rathalos%20%CE%B2/Rathalos%20Coil%20%CE%B2",
+    "sha256": "a1d43e41fcf571110cbc6ea7398b355e34af304a7e837df5696f2555268d7055",
+    "bytes": 50252,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Rathalos Greaves β": {
+    "path": "/assets/catalog/8060910088c720c8a0293261.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_104_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Rathalos%20%CE%B2/Rathalos%20Greaves%20%CE%B2",
+    "sha256": "696aae992f8d6ceaa84ad37f28edc4e8ff5510c311c413bdb7d5a3eb72ae4a1e",
+    "bytes": 45193,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Chatacabra Mail α": {
+    "path": "/assets/catalog/7198d5b52f21d619b211dfaf.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_057_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Chatacabra%20%CE%B1/Chatacabra%20Mail%20%CE%B1",
+    "sha256": "1c4920a3e2e5df5df4d099d5f6640c1b500ba5fc79a9e38ea7fd9ad8f2d3aa10",
+    "bytes": 51087,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Doshaguma Helm": {
+    "path": "/assets/catalog/8b8da6007cb44187af64ee7f.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_022_0_0_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Doshaguma/Doshaguma%20Helm",
+    "sha256": "1fdb5da7407ed797f602a71ecdbd3834be87f974949e0d7c9b73d97389254a00",
+    "bytes": 50743,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Doshaguma Braces": {
+    "path": "/assets/catalog/eacc3c9337d061f4896001a3.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_022_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Doshaguma/Doshaguma%20Braces",
+    "sha256": "47891c778c5d7d43332e4cce17d33026c2468f820d449b72e8c275fba074779e",
+    "bytes": 52525,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Doshaguma Coil": {
+    "path": "/assets/catalog/6ec1faddb4a767638f7140ae.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_022_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Doshaguma/Doshaguma%20Coil",
+    "sha256": "59668929c72121ff2305c11f62ed652c2551b24a52f20fe80249efd61d7ba487",
+    "bytes": 52216,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Doshaguma Greaves": {
+    "path": "/assets/catalog/98265b1d2dd4567ed9f389c6.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_022_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Doshaguma/Doshaguma%20Greaves",
+    "sha256": "e0737f78381dad4144ac79dacded53ed7f66b48286cf98d575734b5c4734aeb2",
+    "bytes": 49162,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Rathalos Helm β": {
+    "path": "/assets/catalog/46076520c7ae145937846f6a.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_096_0_0_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Rathalos%20%CE%B2/G.%20Rathalos%20Helm%20%CE%B2",
+    "sha256": "d395b75110474ea74f9c07a05687b3a8684c9738100b82e72e2d13303493b81c",
+    "bytes": 51443,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Rathalos Mail β": {
+    "path": "/assets/catalog/7779c7387e45514feb85e85d.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_096_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Rathalos%20%CE%B2/G.%20Rathalos%20Mail%20%CE%B2",
+    "sha256": "6225ee537d0d1234bbfa41c79d641ea49cbabd0f03c1f2dbc381c25d1ebd955b",
+    "bytes": 53213,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Rathalos Vambraces β": {
+    "path": "/assets/catalog/efd0040ac644125d41ef080e.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_096_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Rathalos%20%CE%B2/G.%20Rathalos%20Vambraces%20%CE%B2",
+    "sha256": "686b7a5a621c4642890c2f6f9e7ae41a50d015069e06ca532339aff186ea1006",
+    "bytes": 50919,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Rathalos Greaves β": {
+    "path": "/assets/catalog/7eea5e4ec0e187856403de28.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_096_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Rathalos%20%CE%B2/G.%20Rathalos%20Greaves%20%CE%B2",
+    "sha256": "f847169c7e8cd68a7276135fdb6cda7a762f082867deebe95b2f9350bcee78cb",
+    "bytes": 45845,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Conga Greaves β": {
+    "path": "/assets/catalog/a737f7998443953bc594aa38.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_072_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Conga%20%CE%B2/Conga%20Greaves%20%CE%B2",
+    "sha256": "70ed63af9601265ee1ba3802d0a1f5bf198eb6181d45e02e06cb18e07c50fa10",
+    "bytes": 47093,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Arkveld Helm": {
+    "path": "/assets/catalog/8dfb2a0c7c0f049964975af0.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_035_0_0_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Arkveld/G.%20Arkveld%20Helm",
+    "sha256": "08f5da2301893292990a619a937b11515060bf50f940bd8ace3f6699844e1c46",
+    "bytes": 51897,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Arkveld Mail": {
+    "path": "/assets/catalog/a6b87dda0ece0b502238ec9b.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_035_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Arkveld/G.%20Arkveld%20Mail",
+    "sha256": "1525de899b74ed088a791ab1bc8abe9d9174291c3f11293a2deb52dc7800c8e5",
+    "bytes": 50977,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Arkveld Coil": {
+    "path": "/assets/catalog/2a35f5693c8357f96d11b736.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_035_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Arkveld/G.%20Arkveld%20Coil",
+    "sha256": "4eb90b5e29880ba90df59e4101436d5a356d198c6c4350e12e17412b509d592b",
+    "bytes": 48418,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Rathalos Coil α": {
+    "path": "/assets/catalog/36f78e00f88765c8c83d8d68.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_095_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Rathalos%20%CE%B1/G.%20Rathalos%20Coil%20%CE%B1",
+    "sha256": "e4b586da7326b7491096a689f7e879872861cce6a96cf3fc29c936e8d5483f26",
+    "bytes": 50114,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Rey Sandmail": {
+    "path": "/assets/catalog/fc0d65b02e1558879b49b045.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_028_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Rey%20Dau/Rey%20Sandmail",
+    "sha256": "34d4ff06158d1b54aab74f2ab3570b6b8850de7c7221531ba8bd358e2aad546e",
+    "bytes": 49167,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Rey Sandcoil": {
+    "path": "/assets/catalog/675ab04f99afac70b0f2765a.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_028_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Rey%20Dau/Rey%20Sandcoil",
+    "sha256": "d2db03d1105e4c25b990aa48f9f771fedeb00006a217e43e41a0f40697fb9db2",
+    "bytes": 57600,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Rey Sandgreaves": {
+    "path": "/assets/catalog/5f8cbfbbd5de389bf3c41764.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_028_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Rey%20Dau/Rey%20Sandgreaves",
+    "sha256": "367614e9a12b8647ef1dc6a6cbd4289276cf19a850d8140effa3b6196db7b389",
+    "bytes": 46438,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Gypceros Helm β": {
+    "path": "/assets/catalog/2e8d3abd7d7b25cf203b2efc.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_060_0_0_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Gypceros%20%CE%B2/Gypceros%20Helm%20%CE%B2",
+    "sha256": "9df22705aa6be1214e5b60ed6ac7979721a7a050f6c0a5eb61709c7211c6bcb8",
+    "bytes": 46357,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Gypceros Mail β": {
+    "path": "/assets/catalog/ce98da5de1dce1919a932373.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_060_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Gypceros%20%CE%B2/Gypceros%20Mail%20%CE%B2",
+    "sha256": "03e2f3e96a7bc3993945c684364b83a7f506ab33c830fd0cd399dbde4b0d49a3",
+    "bytes": 52180,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Gypceros Coil β": {
+    "path": "/assets/catalog/82ff87d29253b4c57528acaa.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_060_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Gypceros%20%CE%B2/Gypceros%20Coil%20%CE%B2",
+    "sha256": "78c2d6d367d516f55e2ad57d41f6c9b7035178ebacdd59bcd13e80acd28801f0",
+    "bytes": 49362,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Kut-Ku Vambraces α": {
+    "path": "/assets/catalog/b69f3a8714f781689ed22b5e.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_055_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Kut-Ku%20%CE%B1/Kut-Ku%20Vambraces%20%CE%B1",
+    "sha256": "4eb03e7a71ecad7f9ba9c81910e4d400e4fb7ca8d306d81131ece5c2838fa3df",
+    "bytes": 53538,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Arkvulcan Coil α": {
+    "path": "/assets/catalog/4bd895e759930eefba176db5.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_121_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Arkveld%20%CE%B1/Arkvulcan%20Coil%20%CE%B1",
+    "sha256": "0f89e1f513bea940279225e540d900bc77a32a938d8fcba00e420f6bb9a00da3",
+    "bytes": 49543,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Rathalos Helm": {
+    "path": "/assets/catalog/e613f87113dc7f8fd6c3111f.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_033_0_0_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Rathalos/G.%20Rathalos%20Helm",
+    "sha256": "7d13173f6e8296885dcfb42563c75a322656463fba428f3791c405c3ce8232cc",
+    "bytes": 51614,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Rathalos Mail": {
+    "path": "/assets/catalog/8ba18fb820ea8772809604ee.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_033_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Rathalos/G.%20Rathalos%20Mail",
+    "sha256": "875680838e891ab67a2280da1a0386a9461035d834ec7c79f1dc254ecdd533b8",
+    "bytes": 53370,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Rathalos Vambraces": {
+    "path": "/assets/catalog/5e6df2fde62f96e08e3105d9.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_033_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Rathalos/G.%20Rathalos%20Vambraces",
+    "sha256": "d14b226b688df9401ac7c3282fd91bfa4b26a1512f4f0f9bde67efb005209f21",
+    "bytes": 51117,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Rathalos Greaves": {
+    "path": "/assets/catalog/ad61a355c694634b3f9947dd.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_033_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Rathalos/G.%20Rathalos%20Greaves",
+    "sha256": "a38e33fa6f3ef4f9e703d1639e574748b6585d475dd6613a88e5cb5324eef7e6",
+    "bytes": 46187,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Dahaad Shardcoil β": {
+    "path": "/assets/catalog/70eec0776a60cc076aebadda.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_114_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Dahaad%20%CE%B2/Dahaad%20Shardcoil%20%CE%B2",
+    "sha256": "5aab96bcf0082af2e57e33f88e2b5712a9c0a921ad994db73f0afa68b521713c",
+    "bytes": 48813,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Dahaad Shardgreaves β": {
+    "path": "/assets/catalog/19c1c73c2aa0a7a672e6cc70.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_114_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Dahaad%20%CE%B2/Dahaad%20Shardgreaves%20%CE%B2",
+    "sha256": "6a98333b653b608228956a651305d88d70ea851e2007e31a035ac18c40738c27",
+    "bytes": 46812,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Hope Mail": {
+    "path": "/assets/catalog/ff231c0267ac7d10c7b3cb15.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_002_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Hope/Hope%20Mail",
+    "sha256": "bd468375c0bb202ea0ec049d9d0165e052b55eaa6a2c1ac99b85b993f30f51e6",
+    "bytes": 55740,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Alloy Helm": {
+    "path": "/assets/catalog/228429b92e9597ac50a344ac.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_007_0_0_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Alloy/Alloy%20Helm",
+    "sha256": "8e530d81630cfa65adf3ff180b04716b6e00ec63b31db57c6d48c21aea376fc0",
+    "bytes": 50440,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Numinous Shroud α": {
+    "path": "/assets/catalog/96d9a71c78a60b72d90010ad.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_162_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Numinous%20%CE%B1/Numinous%20Shroud%20%CE%B1",
+    "sha256": "1c143010e0498108d3315fef5b1c9a3244cc185337363f05cd98849e6e4deb03",
+    "bytes": 46759,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Rey Sandgreaves γ": {
+    "path": "/assets/catalog/5f989321f57bcb237ce56fee.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_194_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Rey%20Dau%20%CE%B3/Rey%20Sandgreaves%20%CE%B3",
+    "sha256": "4e0b1ef2dad4d1194b0db03186df29841d14554228d09077d62b0216d1f24afb",
+    "bytes": 45745,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Doshaguma Mail β": {
+    "path": "/assets/catalog/21d72f38e773112319252a4e.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_094_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Doshaguma%20%CE%B2/G.%20Doshaguma%20Mail%20%CE%B2",
+    "sha256": "afa9ff7bc8d498d3c01670b8c91c12d1ea3cd2032113ced5e7c1a29c9d0bcbca",
+    "bytes": 56030,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Ebony Helm β": {
+    "path": "/assets/catalog/3cb5e1e3fd89216879e2333a.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_100_0_0_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Ebony%20%CE%B2/G.%20Ebony%20Helm%20%CE%B2",
+    "sha256": "2794d28d98d72b15ba7c0aa8a9bc792def9afac9faf1f1df6f8b184c4f8d1207",
+    "bytes": 45153,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Ebony Mail β": {
+    "path": "/assets/catalog/76967ba29439f07dd0c9918c.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_100_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Ebony%20%CE%B2/G.%20Ebony%20Mail%20%CE%B2",
+    "sha256": "016b23fb35b6c2eb3c163ee904b05269d52db82692361ca21b57f078436e9b1c",
+    "bytes": 50958,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Ebony Braces β": {
+    "path": "/assets/catalog/4d4d19b4ec49ac995fc8b283.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_100_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Ebony%20%CE%B2/G.%20Ebony%20Braces%20%CE%B2",
+    "sha256": "b671cb7dff9646e9f3a1f73a33512aa638e7bafeac4137e1417da877f9e462b1",
+    "bytes": 49918,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Ebony Coil β": {
+    "path": "/assets/catalog/df170b33eb9916933113fe7d.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_100_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Ebony%20%CE%B2/G.%20Ebony%20Coil%20%CE%B2",
+    "sha256": "b020acc7f01f22481dce294f9344856eb0d2c302d990de8a09fc706007206090",
+    "bytes": 46407,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Ebony Greaves β": {
+    "path": "/assets/catalog/88f34e4286b8858b3e4c95d1.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_100_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Ebony%20%CE%B2/G.%20Ebony%20Greaves%20%CE%B2",
+    "sha256": "ba50bd3f5ce16c770127f3cd716bf84832000651966a70f138886157c6ccac4f",
+    "bytes": 47122,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Doshaguma Helm β": {
+    "path": "/assets/catalog/e2a5cc52427df95e7b70983d.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_080_0_0_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Doshaguma%20%CE%B2/Doshaguma%20Helm%20%CE%B2",
+    "sha256": "eb20325ef506735f94a836a5d5723e8b3b5c38193e9c268006ae88c015c325bb",
+    "bytes": 51867,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Doshaguma Mail β": {
+    "path": "/assets/catalog/20d896e537e57bd6c21ceee7.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_080_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Doshaguma%20%CE%B2/Doshaguma%20Mail%20%CE%B2",
+    "sha256": "5eb2994a0c03caa0692ea291f4fdbbbff6b7068b60be8a353565b9d4dbdeac58",
+    "bytes": 57407,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Doshaguma Braces β": {
+    "path": "/assets/catalog/502e84f1bccb2d521fe16f4a.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_080_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Doshaguma%20%CE%B2/Doshaguma%20Braces%20%CE%B2",
+    "sha256": "882e7ea2704a43ad89ea7218636b9f27614b86e823b96b0135ee51d21e8bf7d5",
+    "bytes": 52221,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Doshaguma Coil β": {
+    "path": "/assets/catalog/5a8869b1053c496fdc758279.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_080_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Doshaguma%20%CE%B2/Doshaguma%20Coil%20%CE%B2",
+    "sha256": "51d6b9324cad6c98e179176379eb1e258373f48798188bb2698a56bf33bd8369",
+    "bytes": 51956,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Doshaguma Greaves β": {
+    "path": "/assets/catalog/b67f0ed547a5d6711f06e030.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_080_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Doshaguma%20%CE%B2/Doshaguma%20Greaves%20%CE%B2",
+    "sha256": "37b92207426750dd8d98fe88925f6d6e1148bcecacce69933886ad82c20e0503",
+    "bytes": 49377,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Chatacabra Greaves β": {
+    "path": "/assets/catalog/bb02b491d0fcf4ea2c23d227.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_058_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Chatacabra%20%CE%B2/Chatacabra%20Greaves%20%CE%B2",
+    "sha256": "b0d1206429586769a2f3546b28b22db5e7858d84fac56f8b1ba216bc1e45df78",
+    "bytes": 53858,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Kut-Ku Mail β": {
+    "path": "/assets/catalog/180500898e1030853d186283.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_056_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Kut-Ku%20%CE%B2/Kut-Ku%20Mail%20%CE%B2",
+    "sha256": "e6721868ad01877a458cf228ca6c9763a18a72dbbd82d4f0fd534afe0965c0c6",
+    "bytes": 54475,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Rey Sandcoil β": {
+    "path": "/assets/catalog/98cf44ed31627cbcf57f6d38.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_116_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Rey%20Dau%20%CE%B2/Rey%20Sandcoil%20%CE%B2",
+    "sha256": "9eb8d74a53a1b6f420a720098943a10ff6f53d62d933b9d112aab7e2444e106d",
+    "bytes": 56192,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Ebony Helm": {
+    "path": "/assets/catalog/1c4284d4bc99d4d373deb9f8.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_034_0_0_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Ebony/G.%20Ebony%20Helm",
+    "sha256": "acca161e95d80b1f4edcc7037546103b965d945d5939af61c9577998706f22f0",
+    "bytes": 46782,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Ebony Mail": {
+    "path": "/assets/catalog/169ae1f80d045bef8d410a88.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_034_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Ebony/G.%20Ebony%20Mail",
+    "sha256": "3aa1cb2b7132c0c4165a0f61199bf40a0121d1aa8ae90e1c86ba6d37785bee3a",
+    "bytes": 50806,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Ebony Braces": {
+    "path": "/assets/catalog/d6cded7c088f681054acc5fb.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_034_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Ebony/G.%20Ebony%20Braces",
+    "sha256": "2411b3c75139f92625b59f74e89e84819a2fc04fe39bc139bfa5a1c4887b04e8",
+    "bytes": 48847,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Ebony Coil": {
+    "path": "/assets/catalog/6834c906c04898aeb442265b.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_034_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Ebony/G.%20Ebony%20Coil",
+    "sha256": "24ee4c32b05eb69857cf74dbcbee20300e4a15723bd6e798c12c778fd1da3422",
+    "bytes": 45077,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:High Metal Braces α": {
+    "path": "/assets/catalog/297588093d07f118da462809.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_130_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/High%20Metal%20%CE%B1/High%20Metal%20Braces%20%CE%B1",
+    "sha256": "385dfe818bb99812ff04bc5d830c2253b9c435b117903e58848b562996054639",
+    "bytes": 51824,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Nerscylla Greaves": {
+    "path": "/assets/catalog/bfb6021fe77d373740be86db.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_024_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Nerscylla/Nerscylla%20Greaves",
+    "sha256": "13345a54c9935704a21e31d0080474eb3837261929d1b2e49da55631e83cbab3",
+    "bytes": 47076,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Doshaguma Braces α": {
+    "path": "/assets/catalog/bb66725cad8cd9bf0b4a52fd.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_079_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Doshaguma%20%CE%B1/Doshaguma%20Braces%20%CE%B1",
+    "sha256": "2f05d36bdbdffa3053687bb27de0e1ddb0490def54069941fb11a34e38bd39eb",
+    "bytes": 52776,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Arkveld Vambraces β": {
+    "path": "/assets/catalog/43d9a3b4b118cc24b8b0457f.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_036_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Arkveld%20%CE%B2/G.%20Arkveld%20Vambraces%20%CE%B2",
+    "sha256": "05278e95ce991ebe8e5742c76792a74d9c2ed0b4493886dbf41dce7e8f82e46b",
+    "bytes": 51313,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Udra Miremail": {
+    "path": "/assets/catalog/b317b572d6b9903ca147b717.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_030_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Nu%20Udra/Udra%20Miremail",
+    "sha256": "06c791ea2c9be18a2a6fa0b5147252b303c1bc955f73f6c31538776ce61a34df",
+    "bytes": 49327,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Udra Miregreaves": {
+    "path": "/assets/catalog/3875931d4dacb033e4d867ad.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_030_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Nu%20Udra/Udra%20Miregreaves",
+    "sha256": "952c38438e87f8998883b5dc78ff8964ada3145a3fe6326563ab46fc52ecfdbe",
+    "bytes": 47628,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Ajarakan Coil β": {
+    "path": "/assets/catalog/acc63273eca17902dc210976.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_090_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Ajarakan%20%CE%B2/Ajarakan%20Coil%20%CE%B2",
+    "sha256": "01dcfb093f2d430ab67fdb7e5844c8df302be5f50d7ef37f005c79eca6a34552",
+    "bytes": 47246,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Fulgur Vambraces α": {
+    "path": "/assets/catalog/eb6336bcc9127020fc44723c.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_083_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Fulgur%20%CE%B1/G.%20Fulgur%20Vambraces%20%CE%B1",
+    "sha256": "ba97f4e333e91205320bc0bc4e1c235ab0a410b0ba79fd311d7184432323e762",
+    "bytes": 51394,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Fulgur Greaves α": {
+    "path": "/assets/catalog/e2a5f2d2736a9af150e96d90.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_083_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Fulgur%20%CE%B1/G.%20Fulgur%20Greaves%20%CE%B1",
+    "sha256": "b38b14a30c6d65ff2a44ece47a88a00474fa23b0e71282fd7ef975b94a9ae879",
+    "bytes": 44956,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Ebony Braces α": {
+    "path": "/assets/catalog/2bed640f035181b6c73d3812.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_099_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Ebony%20%CE%B1/G.%20Ebony%20Braces%20%CE%B1",
+    "sha256": "92853b7e1f511b7adce37262a8d2a360600cc283b21ffc60833cfe22701beef5",
+    "bytes": 49836,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Ebony Greaves α": {
+    "path": "/assets/catalog/da004a5ad215eb30ffbf9185.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_099_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Ebony%20%CE%B1/G.%20Ebony%20Greaves%20%CE%B1",
+    "sha256": "15cb093c81d4fbe22892b0dc699a38790e7597cb05afc7181513f14b85181582",
+    "bytes": 49054,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Arkvulcan Mail β": {
+    "path": "/assets/catalog/b5d2a9d3ce4ec1954b489e43.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_122_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Arkveld%20%CE%B2/Arkvulcan%20Mail%20%CE%B2",
+    "sha256": "fa6e011b4ab3927c16b9bc036f047b9d3f0a615f14f01a024222ba3e7554db7f",
+    "bytes": 50145,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Balahara Mail": {
+    "path": "/assets/catalog/9de41466561445a9f0efc083.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_021_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Balahara/Balahara%20Mail",
+    "sha256": "ffce0d947b55281f94b2db93e989bc88c3308b680adb5bc32994556db46792a5",
+    "bytes": 55678,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Bulaqchi Specs α": {
+    "path": "/assets/catalog/df0456eed148d1036a33cc43.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_043_0_0_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Bulaqchi%20%CE%B1/Bulaqchi%20Specs%20%CE%B1",
+    "sha256": "7ea30f7254fad9d5d37f41bf531e1957f1cd21167b5e4cde73740e73b798e86d",
+    "bytes": 42783,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Fulgur Helm β": {
+    "path": "/assets/catalog/7e43fe8a4ab54d8bb4a48d4e.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_084_0_0_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Fulgur%20%CE%B2/G.%20Fulgur%20Helm%20%CE%B2",
+    "sha256": "ba9b65883d11520a0294bbf28534d41b28fa3d0030651c4fe4222c195529fb06",
+    "bytes": 51949,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Fulgur Mail β": {
+    "path": "/assets/catalog/423003ba7805e1f3d19fad44.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_084_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Fulgur%20%CE%B2/G.%20Fulgur%20Mail%20%CE%B2",
+    "sha256": "6fe34f8ca6783b8797db5a6ceaf3b73e892e30be99e38c49fa2241cb851b9bed",
+    "bytes": 50667,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:G. Fulgur Vambraces β": {
+    "path": "/assets/catalog/0cc426f1315d0a710827330f.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_084_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Guardian%20Fulgur%20%CE%B2/G.%20Fulgur%20Vambraces%20%CE%B2",
+    "sha256": "aa8e434e294bcc718ea6c9b4325b0214acf89af4592573962afb7ecc983dc731",
+    "bytes": 53805,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Rathalos Mail α": {
+    "path": "/assets/catalog/3ec98ae36a65fd18c03ab5d3.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_103_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Rathalos%20%CE%B1/Rathalos%20Mail%20%CE%B1",
+    "sha256": "7ef63dc27cd4c5509edc771d9193fc0883d6d115f41a1590b83eb6fbddad4eb4",
+    "bytes": 53111,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Xu Wu Greaves β": {
+    "path": "/assets/catalog/ec4ddbf734832eee92436361.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_106_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Xu%20Wu%20%CE%B2/Xu%20Wu%20Greaves%20%CE%B2",
+    "sha256": "ddb12b72b72a53d68552eb34790cdf8bcd0b33b8ff2cbace7878b43c65da1c68",
+    "bytes": 44609,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Ajarakan Mail α": {
+    "path": "/assets/catalog/bf1f113e72c818a29a1825fd.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_089_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Ajarakan%20%CE%B1/Ajarakan%20Mail%20%CE%B1",
+    "sha256": "e583ea97d389b38d0eccf83ba67e13b8ebbb9e3eb537a8d47b61cd9bb1d4fe62",
+    "bytes": 53442,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Gore Helm β": {
+    "path": "/assets/catalog/5e8613705f24699ea0527665.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_108_0_0_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Gore%20%CE%B2/Gore%20Helm%20%CE%B2",
+    "sha256": "14b8bb396ac472da5f4d3a8b73eac19d435eb0f6ee6cd1a5454976bec06787b2",
+    "bytes": 48740,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Gore Mail β": {
+    "path": "/assets/catalog/a41f020d1f02bebf306abadb.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_108_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Gore%20%CE%B2/Gore%20Mail%20%CE%B2",
+    "sha256": "01a99d7a899d0d1c99455c3a85d87eefcb17937150764993ff634ffe4596dc9a",
+    "bytes": 56030,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Gore Coil β": {
+    "path": "/assets/catalog/0669f8b379a48b536692bb47.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_108_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Gore%20%CE%B2/Gore%20Coil%20%CE%B2",
+    "sha256": "fa308e2aa9cee9b5069c6418cbdbe2e780a18b6ed8768022a4dbf6111f24331f",
+    "bytes": 48165,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Gore Greaves β": {
+    "path": "/assets/catalog/c4e05b56185468ce6737c810.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_108_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Gore%20%CE%B2/Gore%20Greaves%20%CE%B2",
+    "sha256": "d9fdc8e7d9052267551321374f8d5d6bc393068a240d45c6b27db3e3a4d34bd2",
+    "bytes": 45681,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Demon Pants α": {
+    "path": "/assets/catalog/e7b3f2ec7c6d73285f8d323a.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_207_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Akuma%20%CE%B1/Demon%20Pants%20%CE%B1",
+    "sha256": "efc1c6093a7d7389d197cb7edfeb7d00e16001820b7b96bde981a5fd2ac396c6",
+    "bytes": 39541,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Afi Wrap α": {
+    "path": "/assets/catalog/7e5e29f346948f4b282fbc85.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_177_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Afi%20%CE%B1/Afi%20Wrap%20%CE%B1",
+    "sha256": "bcd51a5b4805295854afcd7c60aac84ef137c808417450caf184a6186bdba625",
+    "bytes": 56206,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Afi Sandals α": {
+    "path": "/assets/catalog/1f449ec1bd20cc4a7a2ceff6.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_177_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Afi%20%CE%B1/Afi%20Sandals%20%CE%B1",
+    "sha256": "b4dfcfc2726c9504439a7bd7d0f3d922e80b6c002ccdd260774b8f748c10a9c1",
+    "bytes": 44819,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Duna Wildgreaves γ": {
+    "path": "/assets/catalog/9db56586c0f30bd037587fa9.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_195_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Uth%20Duna%20%CE%B3/Duna%20Wildgreaves%20%CE%B3",
+    "sha256": "5f84bea92f203fabd43740c32f66586e487e7e11b481eb744d8c80c44aca2b3f",
+    "bytes": 51554,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Udra Mirehelm γ": {
+    "path": "/assets/catalog/062b86c41a5190564b395595.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_196_0_0_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Nu%20Udra%20%CE%B3/Udra%20Mirehelm%20%CE%B3",
+    "sha256": "e54293bb3bb5538cd0de1a6b252b4f49b0347c3228be1ff7bc572c8bc04c2d4d",
+    "bytes": 44278,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Udra Miremail γ": {
+    "path": "/assets/catalog/370b7d398bfafbfedb3fa516.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_196_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Nu%20Udra%20%CE%B3/Udra%20Miremail%20%CE%B3",
+    "sha256": "0f1bfd3e4f6bc77e427ef85c07d6433fa4d88a5decb35bf32b9935c2104b5e23",
+    "bytes": 51707,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Udra Mirecoil γ": {
+    "path": "/assets/catalog/53ee7df80a58253d269dc8f8.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_196_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Nu%20Udra%20%CE%B3/Udra%20Mirecoil%20%CE%B3",
+    "sha256": "81aac7118fe9a86c85f225afad2d279dcfcae877cbb49277ee93969b057ecf85",
+    "bytes": 49184,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Gogmazios Mail α": {
+    "path": "/assets/catalog/93b25cfa49f94f24c60a5480.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_168_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Gogmazios%20%CE%B1/Gogmazios%20Mail%20%CE%B1",
+    "sha256": "32217d89b3244e853c59b653cc5b45a22ee715447778d314ff9ad7bbebd07fdd",
+    "bytes": 56555,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Gogmazios Vambraces α": {
+    "path": "/assets/catalog/cef0a210bb5160503078e0cd.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_168_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Gogmazios%20%CE%B1/Gogmazios%20Vambraces%20%CE%B1",
+    "sha256": "6028098ba006c1c8e5b0b35d53c81e4bbcac3615e55c1aeaa9324fa61cf84296",
+    "bytes": 50048,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Gogmazios Coil α": {
+    "path": "/assets/catalog/4bf4ee75c7b3cddf82762b48.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_168_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Gogmazios%20%CE%B1/Gogmazios%20Coil%20%CE%B1",
+    "sha256": "e4c988daf870be6c975b3e57f9a5bb0b965e57c29361270cad1db13df10498b8",
+    "bytes": 48931,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Gogmazios Greaves α": {
+    "path": "/assets/catalog/527cc523554229cb0784728f.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_168_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Gogmazios%20%CE%B1/Gogmazios%20Greaves%20%CE%B1",
+    "sha256": "d70cc9b758895a73a45aa89e1e7083814b76dd450a7815268b35716cb25c4ba0",
+    "bytes": 44024,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Dahaad Shardmail γ": {
+    "path": "/assets/catalog/664b72704db657a04677a699.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_197_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Dahaad%20%CE%B3/Dahaad%20Shardmail%20%CE%B3",
+    "sha256": "b8c59112f4410a3c1da465be9ef79103f00cb8dd5659ee91aaae947333d39a18",
+    "bytes": 53237,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Dahaad Shardcoil γ": {
+    "path": "/assets/catalog/1c3709798020889846c2c6f8.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_197_0_3_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Dahaad%20%CE%B3/Dahaad%20Shardcoil%20%CE%B3",
+    "sha256": "00d9bc982cb0ed2a773e54146a9b149d05cecf65a3f1e5e006dcc1396009fcd5",
+    "bytes": 49980,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Dahaad Shardgreaves γ": {
+    "path": "/assets/catalog/74acf3285a44747d06e9504f.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_197_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Dahaad%20%CE%B3/Dahaad%20Shardgreaves%20%CE%B3",
+    "sha256": "829d9be348328a3fca7078ccc9e34ae353c602e5c6b27d7fa8f227229bef7227",
+    "bytes": 38666,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Arkvulcan Helm γ": {
+    "path": "/assets/catalog/abf1e9fda2ba6a94ebe324a1.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_198_0_0_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Arkveld%20%CE%B3/Arkvulcan%20Helm%20%CE%B3",
+    "sha256": "0f46012121b352da8298c4f326024c46351808594d0822e621e0ffc183e137a1",
+    "bytes": 48612,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Arkvulcan Mail γ": {
+    "path": "/assets/catalog/ceae5189a5f4cf029b1904c0.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_198_0_1_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Arkveld%20%CE%B3/Arkvulcan%20Mail%20%CE%B3",
+    "sha256": "bed076ce48179fffeb868dd5f84c44a73bae46fa7ae7d193f789932212204ffa",
+    "bytes": 49457,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Arkvulcan Vambraces γ": {
+    "path": "/assets/catalog/22083dff442a8cbcc5776169.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_198_0_2_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Arkveld%20%CE%B3/Arkvulcan%20Vambraces%20%CE%B3",
+    "sha256": "3984d63150c48ba41835c49395eac99b58ca0d6ad5498173f37b9d5806e86cfe",
+    "bytes": 53103,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "armor:Arkvulcan Greaves γ": {
+    "path": "/assets/catalog/80b83773d0c9a97f86123ba7.png",
+    "source": "https://www.phantombrawlers.com/static/MHWilds/Armour/tex_ch02_00_198_0_4_imlm4.png",
+    "page": "https://www.phantombrawlers.com/MHWilds/Armours/Arkveld%20%CE%B3/Arkvulcan%20Greaves%20%CE%B3",
+    "sha256": "d0ada54b7f5f01b4e70e830418688728eb7f8acdb9e72e4f367958984f150077",
+    "bytes": 45728,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  },
+  "monster:Gogmazios": {
+    "path": "/assets/catalog/acabfb42e9c033181917f869.webp",
+    "source": "https://www.phantombrawlers.com/static/mhwilds/Monsters/Large%20Icons/Gogmazios.webp",
+    "page": "https://www.phantombrawlers.com/mhwilds/Monsters",
+    "sha256": "73f1cce7b283f309df0323b8de87261e571e47b25f4aa218a8d8972d43ab1514",
+    "bytes": 127958,
+    "rights": "Game artwork: CAPCOM; source attribution is not a redistribution license."
+  }
+}

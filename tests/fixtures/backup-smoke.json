@@ -1,0 +1,18 @@
+{
+  "app": "mhwilds-builder",
+  "schema_version": 1,
+  "exported_at": "2026-09-02T00:00:00Z",
+  "builds": [],
+  "damage": [],
+  "talismans": [],
+  "wishlist": [
+    {
+      "type": "weapon",
+      "id": "wpn_1"
+    }
+  ],
+  "preferences": {
+    "locale": "pt",
+    "visual_theme": "windward"
+  }
+}

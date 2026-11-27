@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      MHWILDS_SESSION_SECRET: ${MHWILDS_SESSION_SECRET:?Defina MHWILDS_SESSION_SECRET no arquivo .env}
+      MHWILDS_ALLOWED_ORIGINS: ${MHWILDS_ALLOWED_ORIGINS:-http://127.0.0.1:8000,http://localhost:8000}
+    volumes:
+      - mhwilds-data:/data
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+volumes:
+  mhwilds-data:
+

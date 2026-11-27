@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "game": "Monster Hunter Wilds",
+  "game_data_version": "2026-04-14T22:28:18-03:00",
+  "generated_at": "2026-09-02",
+  "source": {
+    "name": "MHDB Wilds API",
+    "url": "https://docs.wilds.mhdb.io/"
+  },
+  "datasets": [
+    "game_data.json",
+    "game_data_pt.json",
+    "mhdb_raw_data.json",
+    "mhdb_raw_data_pt.json",
+    "meta_build_cache.json"
+  ],
+  "expected_counts": {
+    "weapons": 1188,
+    "armors": 719,
+    "decorations": 361,
+    "talismans": 188,
+    "monsters": 34,
+    "skills": 179,
+    "items": 773,
+    "locations": 5,
+    "armor_sets": 194
+  }
+}

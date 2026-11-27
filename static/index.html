@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MH Wilds — Calculadora & Otimizador Profissional</title>
+    <link rel="icon" type="image/png" href="/assets/equipment-icons/Great%20Sword%20Icon%20White.png">
+    <link rel="stylesheet" href="/static/css/app.css?v=20260925">
+    <link rel="stylesheet" href="/static/css/experience.css?v=20260925">
+</head>
+<body>
+
+    <a class="skip-link" href="#workspace-main">Ir ao conteúdo</a>
+    <aside class="app-sidebar">
+        <div class="logo"><span class="brand-mark">MH</span><span class="brand-copy">Wilds Forge<small>BUILD LAB</small></span></div>
+        <div class="sidebar-preferences form-group">
+            <label>Idioma / Language</label>
+            <select id="language-select" onchange="switchSiteLocale(this.value)">
+                <option value="pt">Português</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        <div class="sidebar-preferences form-group">
+            <label>Bioma visual</label>
+            <select id="appearance-select" onchange="switchVisualTheme(this.value)">
+                <option value="windward">Planícies Zéfiras</option>
+                <option value="scarlet">Floresta Escarlate</option>
+                <option value="oilwell">Bacia Oleídea</option>
+                <option value="iceshard">Escarpas Frígidas</option>
+                <option value="wyveria">Ruínas de Wyveria</option>
+            </select>
+        </div>
+        <nav class="primary-nav" aria-label="Principal">
+            <button type="button" data-route-group="hunt" onclick="showScreen('builder')"><i data-lucide="compass"></i><span data-ux-pt="Caçada" data-ux-en="Hunt">Caçada</span></button>
+            <button type="button" data-route-group="builds" onclick="showScreen('builds')"><i data-lucide="layers"></i><span data-ux-pt="Minhas builds" data-ux-en="My builds">Minhas builds</span></button>
+            <button type="button" data-route-group="library" onclick="showScreen('library')"><i data-lucide="book-open"></i><span data-ux-pt="Biblioteca" data-ux-en="Library">Biblioteca</span></button>
+        </nav>
+        <div class="sidebar-bottom"><button type="button" class="icon-label" onclick="showScreen('settings')"><i data-lucide="settings-2"></i><span data-ux-pt="Preferências" data-ux-en="Preferences">Preferências</span></button><span class="local-note" data-ux-pt="Seu planejamento, sem conta." data-ux-en="Your planning, no account.">Seu planejamento, sem conta.</span></div>
+        <ul class="nav-list legacy-nav" hidden>
+            <li class="nav-section-label">Forja</li>
+            <li class="nav-item" tabindex="0" onclick="showScreen('builder')">Montador Livre</li>
+            <li class="nav-item" tabindex="0" onclick="showScreen('wishlist')">Lista de Desejos <span id="wishlist-nav-count" class="tag" style="margin-left:auto;">0</span></li>
+            <li class="nav-item" tabindex="0" onclick="showScreen('scenario')">Cenário & Monstro</li>
+            <li class="nav-item" tabindex="0" onclick="showScreen('gog')">Editor Arma Gog</li>
+            <li class="nav-item" tabindex="0" onclick="showScreen('talisman')">Editor de Talismã</li>
+            <li class="nav-section-label">Análise</li>
+            <li class="nav-item" tabindex="0" onclick="showScreen('optimizer')">Otimizador de Builds</li>
+            <li class="nav-item" tabindex="0" onclick="showScreen('comparator')">Comparador <span id="comparator-nav-count" class="tag" style="margin-left:auto;">0</span></li>
+            <li class="nav-item" tabindex="0" onclick="showScreen('suggestions')">Sugestões</li>
+            <li class="nav-section-label">Biblioteca</li>
+            <li class="nav-item active" tabindex="0" onclick="showScreen('dashboard')">Visão Geral</li>
+            <li class="nav-item" tabindex="0" onclick="showScreen('inventory')">Inventário de Talismãs</li>
+            <li class="nav-item" tabindex="0" onclick="showScreen('registry')">Registro & Regras</li>
+            <li class="nav-item" tabindex="0" onclick="showScreen('settings')">Configurações</li>
+            <li class="nav-item" tabindex="0" onclick="showScreen('sources')">Fontes & Limites</li>
+        </ul>
+    </aside>
+
+    <main id="workspace-main" tabindex="-1">
+        <header class="workspace-header"><div><span class="eyebrow" data-ux-pt="Mesa de planejamento" data-ux-en="Hunt planning">Mesa de planejamento</span><h1 id="workspace-title">Sua caçada</h1></div><div class="workspace-tools"><span id="draft-status" role="status"></span><button class="icon-button" type="button" onclick="showScreen('settings')" data-ux-title-pt="Preferências" data-ux-title-en="Preferences" aria-label="Preferências"><i data-lucide="settings-2"></i></button></div></header>
+        <div class="hunt-context-bar"><div id="hunt-context-photo"></div><div class="hunt-context-copy"><strong id="hunt-context-title">Carregando catálogo...</strong><span id="hunt-context-detail"></span></div><button type="button" class="btn btn-secondary" onclick="showScreen('scenario')" aria-label="Editar alvo" data-ux-title-pt="Editar alvo" data-ux-title-en="Edit target"><i data-lucide="crosshair"></i><span data-ux-pt="Editar alvo" data-ux-en="Edit target">Editar alvo</span></button></div>
+        <nav class="hunt-flow" aria-label="Planejamento de caçada">
+            <button type="button" data-route="scenario" onclick="showScreen('scenario')" data-planner-pt="Alvo" data-planner-en="Target">Alvo</button>
+            <button type="button" data-route="builder" onclick="showScreen('builder')" data-planner-pt="Build" data-planner-en="Build">Build</button>
+            <button type="button" data-route="comparator" onclick="showScreen('comparator')" data-planner-pt="Comparar" data-planner-en="Compare">Comparar</button>
+            <button type="button" data-route="wishlist" onclick="showScreen('wishlist')" data-planner-pt="Materiais" data-planner-en="Materials">Materiais</button>
+            <span id="hunt-context"></span>
+        </nav>
+        <div class="app-topbar" hidden>
+            <div class="topbar-context"><span class="topbar-title">Mesa de Forja</span><span id="topbar-build" class="topbar-build">Build não calculada</span></div>
+            <span id="calculation-status" class="live-indicator">Cálculo ao vivo</span>
+        </div>
+        <section id="screen-dashboard" class="screen">
+            <section class="expedition-hero">
+                <div>
+                    <div class="hero-kicker">Comissão de Pesquisa · Base de Expedição</div>
+                    <h1>Prepare a próxima caçada.</h1>
+                    <p class="hero-copy">Monte o equipamento, escolha o alvo e veja o impacto de cada habilidade antes de sair do acampamento.</p>
+                    <div class="hero-actions">
+                        <button class="btn" type="button" onclick="showScreen('builder')">Montar build</button>
+                        <button class="btn btn-secondary" type="button" onclick="showScreen('optimizer')">Encontrar melhor set</button>
+                        <button class="btn btn-secondary" type="button" onclick="showScreen('comparator')">Comparar builds</button>
+                    </div>
+                    <div class="hero-metrics">
+                        <div class="hero-metric"><strong id="dash-dps">0.0</strong><span>DPS prático</span></div>
+                        <div class="hero-metric"><strong id="dash-cycle">0</strong><span>Dano por ciclo</span></div>
+                        <div class="hero-metric"><strong id="dash-raw">0.0</strong><span>Raw efetivo</span></div>
+                        <div class="hero-metric"><strong id="dash-saved">0</strong><span>Builds salvas</span></div>
+                    </div>
+                </div>
+                <div class="hunt-brief">
+                    <span class="hunt-brief-label">Alvo em análise</span>
+                    <div id="home-monster-art" class="hunt-brief-art" aria-hidden="true"></div>
+                    <h2 id="home-monster">Selecione um monstro</h2>
+                    <p id="home-brief">A escolha do alvo define hitzones, fraquezas e a recomendação de elemento.</p>
+                </div>
+            </section>
+            <div class="home-section-title"><h2>O que deseja preparar?</h2><span id="dash-alerts" class="metric-note">Aguardando uma build calculada.</span></div>
+            <div class="home-actions">
+                <button class="home-action" type="button" onclick="showScreen('builder')"><strong>Montador Livre</strong><span>Escolha arma, armadura, adornos e veja o resultado na hora.</span></button>
+                <button class="home-action" type="button" onclick="showScreen('scenario')"><strong>Planejar alvo</strong><span>Defina monstro, parte vulnerável, ferida e uptime realista.</span></button>
+                <button class="home-action" type="button" onclick="showScreen('optimizer')"><strong>Oficina de Otimização</strong><span>Encontre duas rotas de build para a situação escolhida.</span></button>
+            </div>
+        </section>
+
+        <section id="screen-wishlist" class="screen">
+            <div class="header-bar">
+                <div>
+                    <div class="screen-title">Lista de Desejos</div>
+                    <div class="screen-desc">Acompanhe as peças escolhidas e o total de materiais necessário para criá-las.</div>
+                </div>
+                <div class="action-strip"><button class="btn btn-danger" type="button" onclick="clearWishlist()">Limpar Lista</button></div>
+            </div>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Peças salvas</h3>
+                    <div id="wishlist-items" class="wishlist-list"></div>
+                </div>
+                <div class="card">
+                    <h3>Materiais de craft</h3>
+                    <div id="wishlist-materials" class="mini-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="screen-builder" class="screen">
+            <div class="build-mode segmented"><button type="button" class="active" onclick="showScreen('builder')" data-ux-pt="Montar" data-ux-en="Build">Montar</button><button type="button" onclick="showScreen('optimizer')" data-ux-pt="Recomendar" data-ux-en="Recommend">Recomendar</button></div>
+            <div class="header-bar">
+                <div>
+                    <div class="screen-title" data-ux-pt="Sua build" data-ux-en="Your build">Sua build</div>
+                    <div class="screen-desc">Selecione peças, configure jóias dinâmicas por nível de slot e acompanhe os cálculos ao vivo.</div>
+                </div>
+                <div class="action-strip">
+                    <input type="text" id="build-name-input" placeholder="Nome da Build..." style="width:220px;">
+                    <button class="icon-button" id="undo-build" type="button" onclick="undoWorkspace()" aria-label="Desfazer" data-ux-title-pt="Desfazer" data-ux-title-en="Undo" disabled><i data-lucide="undo-2"></i></button>
+                    <button class="icon-button" id="redo-build" type="button" onclick="redoWorkspace()" aria-label="Refazer" data-ux-title-pt="Refazer" data-ux-title-en="Redo" disabled><i data-lucide="redo-2"></i></button>
+                    <button class="btn" onclick="saveCurrentBuild()">Salvar Build</button>
+                    <details class="action-menu"><summary class="icon-button" aria-label="Mais ações"><i data-lucide="ellipsis"></i></summary><div>
+                    <button class="btn btn-secondary" onclick="compareCurrentBuild()" data-ux-pt="Comparar build" data-ux-en="Compare build">Comparar build</button>
+                    <button class="btn btn-secondary" onclick="addCurrentBuildToWishlist()">Materiais da Build</button>
+                    <button class="btn btn-secondary" onclick="recommendGogForCurrentBuild()">Recomendar Arma Gog</button>
+                    <button class="btn btn-secondary" onclick="generateBuildCard()">Build Card</button>
+                    <button class="btn btn-secondary" onclick="saveCurrentDamage()">Salvar Resultado</button>
+                    <button class="btn btn-secondary" onclick="clearBuilderDecorations()">Limpar Adornos</button>
+                    <button class="btn btn-danger" onclick="clearCurrentEquipment()">Limpar</button>
+                    </div></details>
+                    <div id="save-status" class="status-line"></div>
+                </div>
+            </div>
+
+            <div id="builder-gog-recommendation" class="card builder-gog-panel" style="display:none;"></div>
+
+            <div class="grid-2 builder-workspace">
+                <div class="card">
+                    <h3>Equipamentos & Encaixes</h3>
+                    <div id="loadout-visual-strip" class="loadout-visual-strip" aria-label="Resumo visual do equipamento"></div>
+                    <div id="equipment-preview-grid" class="equipment-preview-grid" hidden></div>
+                    <div class="equip-row">
+                        <div class="equip-label"><span class="equipment-icon" id="icon-box-weapon"></span> Arma</div>
+                        <input type="text" id="filter-weapons" class="inline-select-filter" placeholder="Pesquisar arma..." oninput="populateDropdowns(true)"><select id="sel-weapon" onchange="onEquipChange()"></select>
+                        <div id="slots-weapon" class="deco-slots-row"></div>
+                    </div>
+
+                    <div class="equip-row">
+                        <div class="equip-label"><span class="equipment-icon" id="icon-box-helm"></span> Elmo</div>
+                        <input type="text" id="filter-helm" class="inline-select-filter" placeholder="Pesquisar elmo/set/habilidade..." oninput="populateDropdowns(true)"><select id="sel-helm" onchange="onEquipChange()"></select>
+                        <div id="slots-helm" class="deco-slots-row"></div>
+                    </div>
+
+                    <div class="equip-row">
+                        <div class="equip-label"><span class="equipment-icon" id="icon-box-chest"></span> Peitoral</div>
+                        <input type="text" id="filter-chest" class="inline-select-filter" placeholder="Pesquisar peitoral/set/habilidade..." oninput="populateDropdowns(true)"><select id="sel-chest" onchange="onEquipChange()"></select>
+                        <div id="slots-chest" class="deco-slots-row"></div>
+                    </div>
+
+                    <div class="equip-row">
+                        <div class="equip-label"><span class="equipment-icon" id="icon-box-arms"></span> Braços</div>
+                        <input type="text" id="filter-arms" class="inline-select-filter" placeholder="Pesquisar braços/set/habilidade..." oninput="populateDropdowns(true)"><select id="sel-arms" onchange="onEquipChange()"></select>
+                        <div id="slots-arms" class="deco-slots-row"></div>
+                    </div>
+
+                    <div class="equip-row">
+                        <div class="equip-label"><span class="equipment-icon" id="icon-box-waist"></span> Cintura</div>
+                        <input type="text" id="filter-waist" class="inline-select-filter" placeholder="Pesquisar cintura/set/habilidade..." oninput="populateDropdowns(true)"><select id="sel-waist" onchange="onEquipChange()"></select>
+                        <div id="slots-waist" class="deco-slots-row"></div>
+                    </div>
+
+                    <div class="equip-row">
+                        <div class="equip-label"><span class="equipment-icon" id="icon-box-legs"></span> Pernas</div>
+                        <input type="text" id="filter-legs" class="inline-select-filter" placeholder="Pesquisar pernas/set/habilidade..." oninput="populateDropdowns(true)"><select id="sel-legs" onchange="onEquipChange()"></select>
+                        <div id="slots-legs" class="deco-slots-row"></div>
+                    </div>
+
+                    <div class="equip-row">
+                        <div class="equip-label"><span class="equipment-icon" id="icon-box-talisman"></span> Talismã</div>
+                        <input type="text" id="filter-talisman" class="inline-select-filter" placeholder="Pesquisar talismã..." oninput="populateDropdowns(true)"><select id="sel-talisman" onchange="onEquipChange()"></select>
+                        <div id="slots-talisman" class="deco-slots-row"></div>
+                    </div>
+                </div>
+
+                <div class="sticky-results" style="display:flex; flex-direction:column; gap:20px;">
+                    <div class="card result-summary">
+                        <h3>Métricas de Dano em Tempo Real</h3>
+                        <div id="build-validity" class="state-label"></div>
+                        <div id="build-delta" role="status"></div>
+                        <div id="engine-transparency-badges" class="engine-badges"></div>
+                        <div class="grid-2" style="margin-top:10px;">
+                            <div class="stat-badge">
+                                <div class="stat-val" id="stat-dps">0.0</div>
+                                <div class="stat-lbl">DPS Prático</div>
+                            </div>
+                            <div class="stat-badge">
+                                <div class="stat-val" id="stat-efr">0.0</div>
+                                <div class="stat-lbl">Raw Efetivo (EFR)</div>
+                            </div>
+                            <div class="stat-badge">
+                                <div class="stat-val" id="stat-aff">0%</div>
+                                <div class="stat-lbl">Afinidade Efetiva</div>
+                            </div>
+                            <div class="stat-badge">
+                                <div class="stat-val" id="stat-cycle">0</div>
+                                <div class="stat-lbl">Dano por Ciclo</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card compact-card">
+                        <h3>Avisos Inteligentes</h3>
+                        <div id="smart-warnings-container" class="mini-list warning-list"></div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Habilidades Ativas Acumuladas</h3>
+                        <div id="active-skills-container" class="active-skills-grid"></div>
+                        <div id="slot-warnings-container" style="margin-top:10px; color:var(--danger); font-size:0.8rem;"></div>
+                    </div>
+                    <div class="card" id="build-card-panel" style="display:none;">
+                        <h3>Build Card</h3>
+                        <div id="build-card-content" class="mini-list"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="screen-scenario" class="screen">
+            <div class="header-bar">
+                <div>
+                    <div class="screen-title">Cenário de Combate & Monstro Alvo</div>
+                    <div class="screen-desc">Configuração de hitzones ponderadas, condições de ferida (Modo Foco) e uptimes de buffs contextuais.</div>
+                </div>
+            </div>
+
+            <div class="scenario-main-grid">
+                <div class="card scenario-monster-panel">
+                    <div class="scenario-panel-heading">
+                        <div>
+                            <h3>Alvo e ponto de impacto</h3>
+                            <p class="metric-note">Escolha a região que o cálculo deve considerar.</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Monstro</label>
+                        <select id="scenario-monster" onchange="onMonsterChange()"></select>
+                    </div>
+                    <div id="monster-gallery-wrap" class="monster-gallery-wrap">
+                        <input type="search" id="monster-gallery-search" class="monster-gallery-search" placeholder="Filtrar monstro na galeria..." oninput="if (typeof renderMonsterGallery === 'function') renderMonsterGallery()">
+                        <div id="monster-gallery-strip" class="monster-gallery-strip" role="listbox" aria-label="Galeria de monstros"></div>
+                    </div>
+                    <div class="monster-hero">
+                        <div class="monster-hero-art" id="monster-hero-art" aria-hidden="true"></div>
+                        <div class="monster-hero-copy">
+                            <div>
+                                <span class="monster-hero-kicker">Alvo em análise</span>
+                                <h2 id="monster-card-name">Monstro</h2>
+                            </div>
+                            <div class="monster-hero-meta" id="monster-card-meta">Dados do alvo selecionado.</div>
+                        </div>
+                    </div>
+                    <div class="monster-controls">
+                        <div class="form-group">
+                            <label>Parte do Corpo / Modo de Dano</label>
+                            <select id="scenario-part" onchange="recalculate(); renderMonsterIntel();"></select>
+                        </div>
+                        <div class="scenario-check">
+                            <input type="checkbox" id="use-custom-monster" onchange="toggleCustomMonster()">
+                            <label for="use-custom-monster">Usar monstro customizado</label>
+                        </div>
+                        <div id="custom-monster-editor" style="display:none;">
+                            <div class="form-group"><label>Nome do Monstro Customizado</label><input type="text" id="custom-monster-name" value="Monstro Customizado"></div>
+                            <div style="display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:8px;">
+                                <div><label>Corte</label><input type="number" id="custom-hz-sever" value="60" min="0" max="100"></div>
+                                <div><label>Impacto</label><input type="number" id="custom-hz-blunt" value="60" min="0" max="100"></div>
+                                <div><label>Projétil</label><input type="number" id="custom-hz-shot" value="45" min="0" max="100"></div>
+                                <div><label>Fogo</label><input type="number" id="custom-hz-fire" value="20" min="0" max="100"></div>
+                                <div><label>Água</label><input type="number" id="custom-hz-water" value="20" min="0" max="100"></div>
+                                <div><label>Raio</label><input type="number" id="custom-hz-thunder" value="20" min="0" max="100"></div>
+                                <div><label>Gelo</label><input type="number" id="custom-hz-ice" value="20" min="0" max="100"></div>
+                                <div><label>Dragão</label><input type="number" id="custom-hz-dragon" value="20" min="0" max="100"></div>
+                            </div>
+                            <button class="btn btn-secondary" style="margin-top:10px;" onclick="applyCustomMonster()">Aplicar Monstro Customizado</button>
+                        </div>
+                        <div class="scenario-check">
+                            <input type="checkbox" id="scenario-wound" onchange="if (typeof toggleWoundBonusVisibility === 'function') toggleWoundBonusVisibility(); recalculate();">
+                            <label for="scenario-wound">Ponto com Ferida Ativa / Modo Foco (+20% Afinidade Contextual)</label>
+                        </div>
+                        <div id="scenario-wound-bonus-wrap" class="wound-bonus-wrap form-group" hidden>
+                            <label for="scenario-wound-bonus">Bônus de Hitzone da Ferida (+HZV)</label>
+                            <select id="scenario-wound-bonus" onchange="recalculate()">
+                                <option value="0">+0 HZV (apenas +20% Afinidade WEX)</option>
+                                <option value="10">+10 HZV (ferida leve)</option>
+                                <option value="15">+15 HZV (ferida padrão)</option>
+                                <option value="20">+20 HZV (ferida exposta)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p id="monster-desc" style="color:var(--text-muted); font-size:0.85rem; margin-top:12px; line-height:1.4;"></p>
+                    <p class="metric-note" data-ux-pt="A média das partes é uma aproximação, não a distribuição real dos seus golpes." data-ux-en="The average of parts is an approximation, not your actual hit distribution.">A média das partes é uma aproximação, não a distribuição real dos seus golpes.</p>
+                    <div class="scenario-actions">
+                        <button class="btn btn-secondary" type="button" onclick="openSelectedMonsterWiki()">Abrir na Wiki interna</button>
+                        <a class="btn btn-secondary" id="monster-kiranico-link" href="https://mhwilds.kiranico.com/data/monsters/jin-dahaad" target="_blank" rel="noopener">Dados completos no Kiranico</a>
+                    </div>
+                </div>
+
+                <div class="card scenario-intel-panel">
+                    <div class="scenario-panel-heading">
+                        <div>
+                            <h3>Perfil de vulnerabilidades</h3>
+                            <p class="metric-note">Maior hitzone significa mais dano recebido naquele tipo de golpe.</p>
+                        </div>
+                    </div>
+                    <section class="scenario-data-section">
+                        <div class="scenario-section-title"><h4>Dano físico</h4><small>Hitzone 0-100</small></div>
+                        <div id="monster-physical-grid" class="monster-metric-grid"></div>
+                    </section>
+                    <section class="scenario-data-section">
+                        <div class="scenario-section-title"><h4>Dano elemental</h4><small>Hitzone 0-100</small></div>
+                        <div id="monster-element-grid" class="monster-metric-grid"></div>
+                    </section>
+                    <section class="scenario-data-section">
+                        <div class="scenario-section-title"><h4>Fraquezas a status</h4><small>Escala 0-3: maior é melhor</small></div>
+                        <div id="monster-status-grid" class="monster-metric-grid"></div>
+                    </section>
+                    <section class="scenario-data-section">
+                        <div class="scenario-section-title"><h4>Melhores partes para dano físico</h4><small>Maior hitzone entre corte, impacto e projétil</small></div>
+                        <div id="monster-part-ranking" class="monster-parts-list"></div>
+                    </section>
+                    <div class="scenario-help">
+                        <p>Dúvidas sobre os números? A explicação abre diretamente na página correspondente do Registro & Regras.</p>
+                        <div class="scenario-help-links">
+                            <button class="btn btn-secondary" type="button" onclick="openWikiEntry('mechanic', 'hitzone')">Entender hitzones</button>
+                            <button class="btn btn-secondary" type="button" onclick="openWikiEntry('mechanic', 'element')">Entender elemento</button>
+                            <button class="btn btn-secondary" type="button" onclick="openWikiEntry('mechanic', 'status')">Entender status</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="card scenario-uptime-card">
+                    <h3>Uptimes de Habilidades Contextuais</h3>
+                    <div class="segmented" style="margin-bottom:12px;">
+                        <button class="btn btn-secondary active" data-builder-uptime="default" onclick="applyUptimePreset('default')">Padrão</button>
+                        <button class="btn btn-secondary" data-builder-uptime="realistic" onclick="applyUptimePreset('realistic')">Realista</button>
+                        <button class="btn btn-secondary" data-builder-uptime="aggressive" onclick="applyUptimePreset('aggressive')">Agressivo</button>
+                        <button class="btn btn-secondary" data-builder-uptime="comfort" onclick="applyUptimePreset('comfort')">Conforto</button>
+                    </div>
+                    <div class="form-group">
+                        <label>Uptime Desafiante / Agitator (0% a 100%)</label>
+                        <input type="number" id="uptime-agi" value="80" min="0" max="100" onchange="recalculate()">
+                    </div>
+                    <div class="form-group">
+                        <label>Uptime Ímpeto / Burst (0% a 100%)</label>
+                        <input type="number" id="uptime-burst" value="90" min="0" max="100" onchange="recalculate()">
+                    </div>
+                    <div class="form-group">
+                        <label>Uptime Weakness Exploit (0% a 100%)</label>
+                        <input type="number" id="uptime-wex" value="85" min="0" max="100" onchange="recalculate()">
+                    </div>
+                    <div style="display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:8px;">
+                        <div><label>Maximum Might</label><input type="number" id="uptime-maxmight" value="0" min="0" max="100" onchange="recalculate()"></div>
+                        <div><label>Peak Performance</label><input type="number" id="uptime-peak" value="0" min="0" max="100" onchange="recalculate()"></div>
+                        <div><label>Offensive Guard</label><input type="number" id="uptime-og" value="0" min="0" max="100" onchange="recalculate()"></div>
+                        <div><label>Counterstrike</label><input type="number" id="uptime-counter" value="0" min="0" max="100" onchange="recalculate()"></div>
+                        <div><label>Coalescence</label><input type="number" id="uptime-coal" value="0" min="0" max="100" onchange="recalculate()"></div>
+                        <div><label>Latent Power</label><input type="number" id="uptime-latent" value="0" min="0" max="100" onchange="recalculate()"></div>
+                        <div><label>Frenzy/Antivirus</label><input type="number" id="uptime-frenzy" value="0" min="0" max="100" onchange="recalculate()"></div>
+                        <div><label>Might Seed/Pill</label><input type="number" id="uptime-seed" value="0" min="0" max="100" onchange="recalculate()"></div>
+                        <div><label>Demon Powder</label><input type="number" id="uptime-powder" value="0" min="0" max="100" onchange="recalculate()"></div>
+                        <div><label>Mantle</label><input type="number" id="uptime-mantle" value="0" min="0" max="100" onchange="recalculate()"></div>
+                        <div><label>Resentment</label><input type="number" id="uptime-resentment" value="0" min="0" max="100" onchange="recalculate()"></div>
+                        <div><label>Elemental Absorption</label><input type="number" id="uptime-eleabsorb" value="0" min="0" max="100" onchange="recalculate()"></div>
+                        <div><label>Adrenaline Rush</label><input type="number" id="uptime-adrenaline" value="0" min="0" max="100" onchange="recalculate()"></div>
+                        <div><label>Foray</label><input type="number" id="uptime-foray" value="0" min="0" max="100" onchange="recalculate()"></div>
+                        <div><label>Ambush</label><input type="number" id="uptime-ambush" value="0" min="0" max="100" onchange="recalculate()"></div>
+                        <div><label>Heroics</label><input type="number" id="uptime-heroics" value="0" min="0" max="100" onchange="recalculate()"></div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="screen-gog" class="screen">
+            <div class="header-bar">
+                <div>
+                    <div class="screen-title">Editor de Arma Gog / Gogartiana Personalizada</div>
+                    <div class="screen-desc">Crie uma arma customizada com parâmetros sob medida. Ela fica disponível imediatamente como "ARMA GOG :: Editor".</div>
+                </div>
+                <button class="btn" onclick="applyGogWeapon()">Aplicar & Equipar no Montador</button>
+            </div>
+
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Atributos Base</h3>
+                    <div class="form-group">
+                        <label>Tipo de Arma</label>
+                        <select id="gog-type" onchange="renderGogWeaponPreview(); populateGogReinforcements()">
+                            <option>Great Sword</option><option>Long Sword</option><option>Sword & Shield</option><option>Dual Blades</option>
+                            <option>Hammer</option><option>Hunting Horn</option><option>Lance</option><option>Gunlance</option>
+                            <option>Switch Axe</option><option>Charge Blade</option><option>Insect Glaive</option>
+                            <option>Light Bowgun</option><option>Heavy Bowgun</option><option>Bow</option>
+                        </select>
+                        <div id="gog-weapon-preview" class="gog-weapon-preview" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Nome Personalizado</label>
+                        <input type="text" id="gog-name" value="Lâmina Gogartiana Primordial">
+                    </div>
+                    <div class="form-group">
+                        <label>Ataque Raw True</label>
+                        <input type="number" id="gog-raw" value="230" min="50" max="500">
+                    </div>
+                    <div class="form-group">
+                        <label>Afinidade Base (%)</label>
+                        <input type="number" id="gog-aff" value="0" min="-100" max="100">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Elemento & Afiamento</h3>
+                    <div class="form-group">
+                        <label>Natureza</label>
+                        <select id="gog-nature">
+                            <option value="element">Elemental</option>
+                            <option value="status">Status</option>
+                            <option value="none">Raw Puro (Sem Elemento)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Elemento / Status</label>
+                        <select id="gog-ele-type">
+                            <option value="Fire">Fogo</option><option value="Water">Água</option>
+                            <option value="Thunder">Raio</option><option value="Ice">Gelo</option>
+                            <option value="Dragon">Dragão</option><option value="Blast">Explosão</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Elemento / Status exibido no jogo</label>
+                        <input type="number" id="gog-ele-val" value="250" min="0" max="2000">
+                    </div>
+                    <div class="form-group">
+                        <label>Melhor Fio</label>
+                        <select id="gog-sharp">
+                            <option value="White" selected>Branco (1.32x)</option>
+                            <option value="Purple">Roxo (1.39x)</option>
+                            <option value="Blue">Azul (1.20x)</option>
+                            <option value="Green">Verde (1.05x)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Unidades do Melhor Fio</label>
+                        <input type="number" id="gog-sharp-units" value="40" min="10" max="120">
+                    </div>
+                    <div class="form-group">
+                        <label>Fio Anterior</label>
+                        <select id="gog-prev-sharp">
+                            <option value="Blue" selected>Azul</option>
+                            <option value="White">Branco</option>
+                            <option value="Green">Verde</option>
+                            <option value="Yellow">Amarelo</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Foco & Reforços Gog</h3>
+                    <div class="form-group">
+                        <label>Foco do Dispositivo Alcatroado</label>
+                        <select id="gog-focus"><option value="attack" data-planner-pt="Foco em Ataque" data-planner-en="Attack Focus">Foco em Ataque</option><option value="element" data-planner-pt="Foco Elemental" data-planner-en="Element Focus">Foco Elemental</option><option value="affinity" data-planner-pt="Foco em Afinidade" data-planner-en="Affinity Focus">Foco em Afinidade</option><option value="none">Sem foco (arma antiga/importada)</option></select>
+                    </div>
+                    <div class="form-group"><label>5 Reforços Gog</label>
+                        <div class="grid-3" style="gap:6px;"><select id="gog-r1" class="gog-reinforcement"><option value="">(vazio)</option></select><select id="gog-r2" class="gog-reinforcement"><option value="">(vazio)</option></select><select id="gog-r3" class="gog-reinforcement"><option value="">(vazio)</option></select><select id="gog-r4" class="gog-reinforcement"><option value="">(vazio)</option></select><select id="gog-r5" class="gog-reinforcement"><option value="">(vazio)</option></select></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Slots & Habilidades da Arma</h3>
+                    <div class="form-group">
+                        <label>Slots (Ex: 3, 2, 1)</label>
+                        <div style="display:flex; gap:8px;">
+                            <input type="number" id="gog-s1" value="3" min="0" max="4">
+                            <input type="number" id="gog-s2" value="2" min="0" max="4">
+                            <input type="number" id="gog-s3" value="1" min="0" max="4">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Habilidade Embutida 1</label>
+                        <select id="gog-sk1-name"><option value="">(Nenhuma)</option><option value="Attack Boost">Attack Boost</option><option value="Critical Eye">Critical Eye</option><option value="Critical Boost">Critical Boost</option></select>
+                        <input type="number" id="gog-sk1-lvl" value="1" min="1" max="5" style="margin-top:4px;">
+                    </div>
+                    <div class="form-group">
+                        <label>Habilidade Embutida 2</label>
+                        <select id="gog-sk2-name"><option value="">(Nenhuma)</option><option value="Weakness Exploit">Weakness Exploit</option><option value="Agitator">Agitator</option><option value="Burst">Burst</option></select>
+                        <input type="number" id="gog-sk2-lvl" value="1" min="1" max="5" style="margin-top:4px;">
+                    </div>
+                    <div class="form-group">
+                        <label>Habilidade Embutida 3</label>
+                        <select id="gog-sk3-name"><option value="">(Nenhuma)</option><option value="Attack Boost">Attack Boost</option><option value="Critical Eye">Critical Eye</option><option value="Weakness Exploit">Weakness Exploit</option><option value="Critical Boost">Critical Boost</option><option value="Agitator">Agitator</option><option value="Burst">Burst</option></select>
+                        <input type="number" id="gog-sk3-lvl" value="1" min="1" max="5" style="margin-top:4px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="screen-talisman" class="screen">
+            <div class="header-bar">
+                <div>
+                    <div class="screen-title">Editor de Talismã Personalizado</div>
+                    <div class="screen-desc">Cadastre talismãs obtidos no jogo com até 3 habilidades e 3 slots.</div>
+                </div>
+                <button class="btn" onclick="applyCustomTalisman()">Equipar Talismã no Montador</button>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Configuração do Talismã</h3>
+                    <div class="form-group">
+                        <label>Nome do Talismã</label>
+                        <input type="text" id="tali-name" value="Amuleto Deus da Guerra">
+                    </div>
+                    <div class="form-group">
+                        <label>Habilidade 1 & Nível</label>
+                        <select id="tali-s1-name"><option value="Attack Boost">Attack Boost</option><option value="Critical Eye">Critical Eye</option><option value="Weakness Exploit">Weakness Exploit</option></select>
+                        <input type="number" id="tali-s1-lvl" value="3" min="1" max="5" style="margin-top:4px;">
+                    </div>
+                    <div class="form-group">
+                        <label>Habilidade 2 & Nível</label>
+                        <select id="tali-s2-name"><option value="">(Nenhuma)</option><option value="Critical Boost">Critical Boost</option><option value="Agitator">Agitator</option></select>
+                        <input type="number" id="tali-s2-lvl" value="1" min="1" max="5" style="margin-top:4px;">
+                    </div>
+                    <div class="form-group">
+                        <label>Habilidade 3 & Nível</label>
+                        <select id="tali-s3-name"><option value="">(Nenhuma)</option><option value="Attack Boost">Attack Boost</option><option value="Critical Eye">Critical Eye</option><option value="Weakness Exploit">Weakness Exploit</option><option value="Critical Boost">Critical Boost</option><option value="Agitator">Agitator</option><option value="Burst">Burst</option></select>
+                        <input type="number" id="tali-s3-lvl" value="1" min="1" max="5" style="margin-top:4px;">
+                    </div>
+                    <div class="form-group">
+                        <label>Slots do Talismã</label>
+                        <div class="talisman-slot-grid">
+                            <div class="talisman-slot-editor"><span class="metric-note">Slot 1</span><input type="number" id="tali-slot1" value="2" min="0" max="4"><select id="tali-slot-kind1"><option value="armor">Armadura</option><option value="weapon">Arma</option></select></div>
+                            <div class="talisman-slot-editor"><span class="metric-note">Slot 2</span><input type="number" id="tali-slot2" value="1" min="0" max="4"><select id="tali-slot-kind2"><option value="armor">Armadura</option><option value="weapon">Arma</option></select></div>
+                            <div class="talisman-slot-editor"><span class="metric-note">Slot 3</span><input type="number" id="tali-slot3" value="0" min="0" max="4"><select id="tali-slot-kind3"><option value="armor">Armadura</option><option value="weapon">Arma</option></select></div>
+                        </div>
+                        <p class="metric-note">Talismãs avaliados podem ter encaixes de arma e de armadura. Cada espaço aceita somente o tipo indicado.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Inventário Rápido</h3>
+                    <p class="metric-note">Salve o talismã editado para reaproveitar depois. O inventário fica salvo neste navegador.</p>
+                    <button class="btn btn-secondary" onclick="saveTalismanToInventory()">Adicionar ao Inventário</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="screen-inventory" class="screen">
+            <div class="header-bar">
+                <div>
+                    <div class="screen-title">Inventário de Talismãs</div>
+                    <div class="screen-desc">Lista local dos talismãs que você possui. Use para equipar rapidamente no Montador Livre.</div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Talismãs Cadastrados</h3>
+                <div id="talisman-inventory-status" class="status-line" style="margin-bottom:8px;"></div>
+                <div id="talisman-inventory-list" class="mini-list"></div>
+            </div>
+        </section>
+
+        <section id="screen-suggestions" class="screen">
+            <div class="header-bar">
+                <div>
+                    <div class="screen-title">Sugestões</div>
+                    <div class="screen-desc">Lacunas da build atual e prioridades simples de habilidades para melhorar dano.</div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Próximas Melhorias</h3>
+                <div id="suggestions-list" class="mini-list"></div>
+            </div>
+        </section>
+
+        <section id="screen-optimizer" class="screen">
+            <div class="build-mode segmented"><button type="button" onclick="showScreen('builder')" data-ux-pt="Montar" data-ux-en="Build">Montar</button><button type="button" class="active" onclick="showScreen('optimizer')" data-ux-pt="Recomendar" data-ux-en="Recommend">Recomendar</button></div>
+            <div class="header-bar">
+                <div>
+                    <div class="screen-title">Otimizador Automático de Combinações</div>
+                    <div class="screen-desc">Defina as habilidades mínimas que deseja e o solver encontrará as melhores combinações ordenadas por DPS.</div>
+                </div>
+                <button class="btn" id="btn-run-optimizer" onclick="runOptimization()">Executar Otimização</button>
+            </div>
+
+            <div class="shared-comparison-tools"><button class="btn btn-secondary" type="button" onclick="useHuntScenarioInOptimizer()" data-planner-pt="Usar alvo e condições da caçada" data-planner-en="Use hunt target and conditions">Usar alvo e condições da caçada</button><output id="optimizer-scenario-status" aria-live="polite"></output></div>
+            <div id="progression-weapon-recommendation-panel" class="card progression-weapon-window" style="display:none; margin-bottom:14px;"></div>
+            <div id="gog-recommendation-panel" class="card gog-recommendation-window" style="display:none; margin-bottom:14px;"></div>
+
+            <div class="grid-2 optimizer-workspace">
+                <div class="card">
+                    <h3>Critérios & Metas de Habilidades</h3>
+                    <div class="form-group">
+                        <label>Builds pré-prontas</label>
+                        <select id="opt-meta-preset" onchange="applyMetaPreset()"></select>
+                        <div id="opt-preset-description" class="metric-note" style="margin-top:6px;"></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Classe de Arma Alvo</label>
+                        <select id="opt-weapon-type" onchange="populateOptimizerWeapons()">
+                            <option>Great Sword</option><option>Long Sword</option><option>Sword & Shield</option><option>Dual Blades</option>
+                            <option>Hammer</option><option>Hunting Horn</option><option>Lance</option><option>Gunlance</option>
+                            <option>Switch Axe</option><option>Charge Blade</option><option>Insect Glaive</option>
+                            <option>Light Bowgun</option><option>Heavy Bowgun</option><option>Bow</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="opt-specific-weapon-group">
+                        <label>Arma Específica</label>
+                        <input type="text" id="filter-opt-weapons" class="inline-select-filter" placeholder="Pesquisar arma do otimizador..." oninput="populateOptimizerWeapons()">
+                        <select id="opt-weapon-id"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Monstro do Otimizador</label>
+                        <select id="opt-monster-id" onchange="populateOptimizerParts(); refreshWeaponRecommendation();"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Parte alvo do Otimizador</label>
+                        <select id="opt-target-part" onchange="refreshWeaponRecommendation();"></select>
+                        <div class="metric-note">Define os HZ físico e elemental usados para escolher a arma e calcular a rotação.</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Combo usado no cálculo</label>
+                        <select id="opt-rotation-id"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Ordenar Resultado Por</label>
+                        <select id="opt-sort-by">
+                            <option value="practical_dps" selected>DPS prático</option>
+                            <option value="damage_per_min">Dano/min</option>
+                            <option value="damage_per_cycle">Dano por ciclo</option>
+                            <option value="combined_score">Nota combinada</option>
+                            <option value="effective_raw">Raw efetivo</option>
+                        </select>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:10px; margin:10px 0;">
+                        <input type="checkbox" id="opt-use-inventory" checked style="width:18px; height:18px; accent-color:var(--accent);">
+                        <label for="opt-use-inventory" style="margin:0;">Usar talismãs do inventário</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Esforço de Busca</label>
+                        <select id="opt-search-mode">
+                            <option value="fast">Rápido - menos combinações</option>
+                            <option value="balanced">Balanceado</option>
+                            <option value="deep">Mais amplo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <div class="table-tools">
+                            <label style="margin:0;">Habilidades obrigatórias</label>
+                            <button class="btn btn-secondary" type="button" onclick="addOptimizerSkillRow()">+ Habilidade</button>
+                        </div>
+                        <datalist id="opt-skill-options"></datalist>
+                        <div id="opt-skill-targets" class="mini-list"></div>
+                    </div>
+                    <div class="form-group">
+                        <label><input type="checkbox" id="opt-use-transcendence" checked style="width:auto; margin-right:8px;">Considerar todas as armaduras transcendidas</label>
+                    </div>
+                    <details>
+                        <summary style="cursor:pointer; color:var(--accent); font-weight:700;">Uptime das habilidades de dano</summary>
+                        <div class="segmented" style="margin-top:10px; margin-bottom:10px;">
+                            <button class="btn btn-secondary" data-opt-uptime="default" onclick="applyOptimizerUptimePreset('default')">Padrão</button>
+                            <button class="btn btn-secondary active" data-opt-uptime="realistic" onclick="applyOptimizerUptimePreset('realistic')">Realista</button>
+                            <button class="btn btn-secondary" data-opt-uptime="aggressive" onclick="applyOptimizerUptimePreset('aggressive')">Agressivo</button>
+                        </div>
+                        <div class="grid-3" style="margin-top:10px;">
+                            <div><label>Desafiante</label><input type="number" id="opt-up-agi" value="80" min="0" max="100"></div>
+                            <div><label>Ímpeto</label><input type="number" id="opt-up-burst" value="90" min="0" max="100"></div>
+                            <div><label>Ponto Fraco</label><input type="number" id="opt-up-wex" value="85" min="0" max="100"></div>
+                            <div><label>Guarda Ofensiva</label><input type="number" id="opt-up-og" value="0" min="0" max="100"></div>
+                            <div><label>Incursão</label><input type="number" id="opt-up-foray" value="0" min="0" max="100"></div>
+                            <div><label>Ímpeto de Adrenalina</label><input type="number" id="opt-up-adrenaline" value="0" min="0" max="100"></div>
+                            <div><label>Emboscada</label><input type="number" id="opt-up-ambush" value="0" min="0" max="100"></div>
+                            <div><label>Heroísmo</label><input type="number" id="opt-up-heroics" value="0" min="0" max="100"></div>
+                            <div><label>Antivírus</label><input type="number" id="opt-up-frenzy" value="0" min="0" max="100"></div>
+                            <div><label>Performance Máxima</label><input type="number" id="opt-up-peak" value="0" min="0" max="100"></div>
+                            <div><label>Ressentimento</label><input type="number" id="opt-up-resentment" value="0" min="0" max="100"></div>
+                            <div><label>Coalescência</label><input type="number" id="opt-up-coal" value="0" min="0" max="100"></div>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="card">
+                    <h3>Resultados Otimizados</h3>
+                    <div id="optimizer-results-container" style="display:flex; flex-direction:column; gap:10px;">
+                        <p style="color:var(--text-muted);">Defina os parâmetros e clique em "Executar Otimização".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="screen-comparator" class="screen">
+            <div class="header-bar">
+                <div>
+                    <div class="screen-title">Comparador de Builds Salvas (Até 30 Builds)</div>
+                    <div class="screen-desc">Compare ranking geral, DPS, dano por ciclo, dano/minuto, equipamentos e habilidades principais.</div>
+                </div>
+            </div>
+
+            <div class="shared-comparison-tools">
+                <button class="btn btn-secondary" type="button" onclick="showScreen('scenario')" data-planner-pt="Alvo e condições" data-planner-en="Target and conditions">Alvo e condições</button>
+                <label for="comparison-rotation-mode" data-planner-pt="Combos" data-planner-en="Combos">Combos</label>
+                <select id="comparison-rotation-mode" onchange="refreshSharedComparison()">
+                    <option value="saved" data-planner-pt="Rotação de cada build" data-planner-en="Each build's rotation">Rotação de cada build</option>
+                    <option value="best" data-planner-pt="Melhor rotação por build" data-planner-en="Best rotation per build">Melhor rotação por build</option>
+                    <option value="selected" data-planner-pt="Combo do montador" data-planner-en="Builder combo">Combo do montador</option>
+                </select>
+                <button id="refresh-shared-comparison" class="btn" type="button" onclick="refreshSharedComparison()" data-planner-pt="Recalcular" data-planner-en="Recalculate">Recalcular</button>
+                <output id="shared-comparison-status" aria-live="polite"></output>
+            </div>
+            <div class="grid-4" id="comparator-ranking-cards"></div>
+
+            <div class="card">
+                <div class="table-tools">
+                    <div>
+                        <h3 style="margin:0; border:0; padding:0;">Combos e Motor por Golpe</h3>
+                        <p class="metric-note">Escolha uma build para recalcular todas as rotações disponíveis da arma no mesmo monstro, parte e uptime.</p>
+                    </div>
+                    <div style="display:flex; gap:8px; align-items:end; flex-wrap:wrap;">
+                        <div class="form-group" style="margin:0; min-width:240px;"><label>Build analisada</label><select id="combo-build-select" onchange="compareSelectedBuildRotations()"></select></div>
+                        <button class="btn" id="btn-compare-rotations" onclick="compareSelectedBuildRotations()">Comparar combos</button>
+                    </div>
+                </div>
+                <div id="rotation-ranking-container" class="mini-list"><div class="mini-item muted">Salve ou escolha uma build para comparar seus combos.</div></div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3 id="hit-engine-title">Detalhamento do melhor combo</h3>
+                    <div id="nerd-stats-container" class="mini-list"></div>
+                </div>
+                <div class="card">
+                    <h3>Leitura rápida</h3>
+                    <div id="rotation-explanation" class="mini-list"><div class="mini-item muted">A comparação mostra dano por rotação, DPS, DPM e a diferença percentual para o melhor combo.</div></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Tabela de decomposição golpe a golpe</h3>
+                <div class="table-wrap"><table>
+                    <thead><tr><th>Acerto / Golpe</th><th>Acertos</th><th>Motion Value</th><th>Físico normal</th><th>Físico crítico</th><th>Elemental</th><th>Dano esperado</th></tr></thead>
+                    <tbody id="hits-table-body"></tbody>
+                </table></div>
+            </div>
+
+            <div class="card">
+                <div class="comparison-tools">
+                    <div><h3 style="margin:0; border:0; padding:0;">Gráfico de Comparação</h3><p class="metric-note">Selecione as builds que deseja confrontar. O gráfico suporta até 8 por vez para manter os valores legíveis.</p></div>
+                    <div class="comparison-build-picker form-group" style="margin:0;"><label>Builds no gráfico</label><select id="comparison-build-select" multiple onchange="renderComparatorTable()"></select></div>
+                    <div class="action-strip"><button class="btn btn-secondary" type="button" onclick="selectComparisonBuilds('top')">Melhores 6</button><button class="btn btn-secondary" type="button" onclick="selectComparisonBuilds('all')">Todas</button></div>
+                </div>
+                <div class="canvas-box comparison-canvas-box" style="aspect-ratio: 1.8;"><canvas id="build-comparison-chart" width="720" height="400"></canvas></div>
+                <div id="comparison-legend" class="comparison-legend"></div>
+                <div id="comparison-explanation" class="mini-list" style="margin-top:10px;"></div>
+            </div>
+
+            <div class="card">
+                <h3>Explicação das Métricas</h3>
+                <p class="metric-note" data-planner-pt="DPS e DPM são estimativas da rotação. A nota combinada usa 80% de DPS e 20% do índice de sobrevivência; não é porcentagem de dano. A contribuição de habilidade é medida removendo seu efeito isoladamente e não é aditiva." data-planner-en="DPS and DPM are rotation estimates. Combined score uses 80% DPS and 20% survivability index; it is not a damage percentage. Skill contribution is measured by removing its effect in isolation and is not additive.">DPS e DPM são estimativas da rotação. A nota combinada usa 80% de DPS e 20% do índice de sobrevivência; não é porcentagem de dano.</p>
+            </div>
+
+            <div class="card">
+                <h3>Resultados/Danos Salvos</h3>
+                <div id="saved-damage-container" class="mini-list"></div>
+            </div>
+
+            <div class="card">
+                <div class="table-tools">
+                    <h3 style="margin:0; border:0; padding:0;">Tabela Geral Comparativa</h3>
+                    <div style="display:flex; gap:8px; align-items:center;">
+                        <label style="margin:0;">Ordenar por</label>
+                        <select id="comparator-sort" onchange="renderComparatorTable()" style="width:180px;">
+                            <option value="combined_score">Ranking geral</option>
+                            <option value="practical_dps" selected>DPS prático</option>
+                            <option value="damage_per_cycle">Dano por ciclo</option>
+                            <option value="damage_per_min">Dano/min</option>
+                            <option value="effective_raw">Raw efetivo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome da Build</th>
+                            <th>Arma</th>
+                            <th>Raw Ef.</th>
+                            <th>Afinidade</th>
+                            <th>DPS Prático</th>
+                            <th>Dano / Minuto</th>
+                            <th>Dano / Ciclo</th>
+                            <th>Combo calculado</th>
+                            <th>Nota Combinada</th>
+                            <th data-ux-pt="Dif. vs referência" data-ux-en="Delta vs baseline">Dif. vs referência</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="comparator-table-body">
+                        <tr><td colspan="11" style="text-align:center; color:var(--text-muted);">Nenhuma build salva no comparador ainda.</td></tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="screen-registry" class="screen">
+            <div class="header-bar">
+                <div>
+                    <div class="screen-title">Wiki do Caçador</div>
+                    <div class="screen-desc">Definições navegáveis de armas, armaduras, habilidades, adornos, talismãs, monstros e regras do calculador.</div>
+                </div>
+            </div>
+            <div class="wiki-layout">
+                <aside class="wiki-index" aria-label="Índice da wiki">
+                    <h3>Índice</h3>
+                    <div class="wiki-index-controls">
+                        <input type="search" id="wiki-search" placeholder="Pesquisar na wiki..." oninput="renderWikiIndex()">
+                        <select id="wiki-category" onchange="renderWikiIndex()">
+                            <option value="all">Tudo</option>
+                            <option value="weapon">Armas</option>
+                            <option value="armor">Armaduras</option>
+                            <option value="skill">Habilidades</option>
+                            <option value="decoration">Adornos</option>
+                            <option value="talisman">Talismãs</option>
+                            <option value="monster">Monstros</option>
+                            <option value="mechanic">Mecânicas e regras</option>
+                        </select>
+                    </div>
+                    <div id="wiki-results" class="wiki-results"></div>
+                </aside>
+                <article id="wiki-article" class="wiki-article" aria-live="polite"></article>
+            </div>
+        </section>
+
+        <section id="screen-settings" class="screen">
+            <div class="header-bar">
+                <div>
+                    <div class="screen-title">Configurações</div>
+                    <div class="screen-desc">Controles globais de uso, limpeza e exportação/importação simples.</div>
+                </div>
+            </div>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Dados Locais</h3>
+                    <div class="mini-list">
+                        <div class="mini-item"><strong>Builds salvas:</strong> <span id="settings-build-count">0</span>/30</div>
+                        <div class="mini-item"><strong>Resultados salvos:</strong> <span id="settings-damage-count">0</span>/60</div>
+                        <div class="mini-item"><strong>Talismãs salvos:</strong> <span id="settings-talisman-count">0</span></div>
+                        <div class="mini-item"><strong>Itens na Lista de Desejos:</strong> <span id="settings-wishlist-count">0</span></div>
+                    </div>
+                    <div class="action-strip" style="margin-top:12px;">
+                        <button class="btn btn-secondary" onclick="exportLocalData()">Baixar Backup</button>
+                        <button class="btn btn-secondary" onclick="document.getElementById('backup-file-input').click()">Importar Backup</button>
+                        <input id="backup-file-input" type="file" accept="application/json,.json" hidden onchange="importLocalData(event)">
+                        <button class="btn btn-danger" onclick="clearLocalBuildData()">Limpar Builds Locais</button>
+                        <button class="btn btn-danger" onclick="clearLocalDamageData()">Limpar Resultados Locais</button>
+                    </div>
+                    <div id="backup-status" class="status-line" aria-live="polite"></div>
+                </div>
+                <div class="card">
+                    <h3>Integridade da Base</h3>
+                    <p id="settings-data-version" class="metric-note">Verificando versão e integridade dos dados...</p>
+                    <p class="metric-note">Use os presets de uptime na tela de cenário. O idioma, o bioma e seus dados ficam salvos neste navegador.</p>
+                    <div id="settings-status" class="status-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="screen-sources" class="screen">
+            <div class="header-bar">
+                <div>
+                    <div class="screen-title">Fontes e Limites</div>
+                    <div class="screen-desc">Transparência sobre origem dos dados e limites do cálculo atual.</div>
+                </div>
+            </div>
+            <div class="grid-2">
+                <div class="card"><h3>Fontes</h3><p class="metric-note">Equipamentos, habilidades, traduções oficiais e monstros vêm do cache local da MHDB. Os motion values v1.040 são versionados a partir do projeto aberto mhwilds-calculator e da tabela comunitária de 717999vlr. A tela de Cenário também aponta para a ficha correspondente no Kiranico para consulta de hitzones, partes e acúmulo de status. As builds pré-prontas e de progressão ficam salvas em app/meta_build_cache.json.</p></div>
+                <div class="card"><h3>Limites Atuais</h3><p class="metric-note">Os tempos de rotação são estimativas práticas visíveis no resultado. Frascos, disparos, munições e artilharia usam equivalentes aproximados no motor comum; bônus especiais de algumas séries e arredondamentos internos do jogo ainda exigem validação específica por arma.</p></div>
+            </div>
+        </section>
+        <section id="screen-builds" class="screen"><div class="header-bar"><h2 data-ux-pt="Minhas builds" data-ux-en="My builds">Minhas builds</h2><button class="btn" onclick="showScreen('builder')" data-ux-pt="Continuar rascunho" data-ux-en="Continue draft">Continuar rascunho</button></div><div class="library-controls"><input type="search" id="saved-build-search" aria-label="Pesquisar builds" placeholder="Pesquisar builds" oninput="renderBuildLibrary()"><label><input type="checkbox" id="favorite-builds-only" onchange="renderBuildLibrary()"><span data-ux-pt="Favoritas" data-ux-en="Favorites">Favoritas</span></label></div><div id="build-library-list"></div></section>
+        <section id="screen-library" class="screen"><div class="header-bar"><h2 data-ux-pt="Biblioteca" data-ux-en="Library">Biblioteca</h2></div><div class="library-links"><button onclick="showScreen('registry')"><i data-lucide="book-open"></i><span data-ux-pt="Equipamentos e habilidades" data-ux-en="Equipment and skills">Equipamentos e habilidades</span></button><button onclick="showScreen('inventory')"><i data-lucide="gem"></i><span data-ux-pt="Inventário de talismãs" data-ux-en="Talisman inventory">Inventário de talismãs</span></button><button onclick="openEditor('gog')"><i data-lucide="swords"></i><span data-ux-pt="Editor Gog" data-ux-en="Gog editor">Editor Gog</span></button><button onclick="openEditor('talisman')"><i data-lucide="diamond"></i><span data-ux-pt="Editor de talismã" data-ux-en="Talisman editor">Editor de talismã</span></button><button onclick="showScreen('sources')"><i data-lucide="file-check-2"></i><span data-ux-pt="Fontes e limites" data-ux-en="Sources and limits">Fontes e limites</span></button><button onclick="showScreen('dashboard')"><i data-lucide="layout-dashboard"></i><span data-ux-pt="Resumo da caçada" data-ux-en="Hunt overview">Resumo da caçada</span></button></div></section>
+    </main>
+    <dialog id="workspace-dialog" class="workspace-dialog" aria-labelledby="dialog-title"><div class="dialog-heading"><button type="button" id="dialog-back" class="icon-button" onclick="wikiBack()" aria-label="Voltar"><i data-lucide="arrow-left"></i></button><h2 id="dialog-title"></h2><button type="button" class="icon-button" onclick="closeWorkspaceDialog()" aria-label="Fechar" data-ux-title-pt="Fechar" data-ux-title-en="Close"><i data-lucide="x"></i></button></div><div id="dialog-content"></div></dialog>
+    <dialog id="equipment-picker" class="workspace-dialog picker-dialog" aria-labelledby="picker-title"><div class="dialog-heading"><h2 id="picker-title"></h2><button type="button" class="icon-button" onclick="document.getElementById('equipment-picker').close()" aria-label="Fechar"><i data-lucide="x"></i></button></div><div class="picker-search"><i data-lucide="search"></i><input type="search" id="picker-search" role="combobox" aria-expanded="true" aria-controls="picker-options" aria-autocomplete="list" autocomplete="off" placeholder="Pesquisar" oninput="filterPicker()"></div><div id="picker-count" role="status"></div><div id="picker-options" role="listbox"></div><div id="picker-preview"></div><div class="picker-actions"><button type="button" class="btn btn-secondary" onclick="document.getElementById('equipment-picker').close()" data-ux-pt="Cancelar" data-ux-en="Cancel">Cancelar</button><button type="button" id="picker-apply" class="btn" onclick="applyPickerChoice()" disabled data-ux-pt="Equipar" data-ux-en="Equip">Equipar</button></div></dialog>
+    <div id="workspace-toast" role="status" hidden></div>
+
+    <script src="/static/js/material-plan.js?v=20260923"></script>
+    <script src="/static/js/workspace-state.js?v=20260925"></script>
+    <script src="/static/js/lucide.min.js?v=0.468.0"></script>
+    <script src="/static/js/app.js?v=20260925"></script>
+    <script src="/static/js/planner.js?v=20260925"></script>
+    <script src="/static/js/experience.js?v=20260925"></script>
+</body>
+</html>
+
